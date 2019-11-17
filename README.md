@@ -10,13 +10,12 @@ Also, i've-no-idea-how-to-name-my-project-so-let's-use-the-name-of-a-divinity :
 
 ## Venues
 
-[x] maroquinerie
-[ ] trianon
-[ ] cigale
-[ ] boule noire
-[ ] petit bain
-[ ] trabendo
-[ ] bataclan
-[ ] cabaret sauvage
-[ ] alhambra
-
+* [x] maroquinerie
+* [ ] trianon
+* [ ] cigale
+* [ ] boule noire
+* [ ] petit bain
+* [ ] trabendo
+* [ ] bataclan
+* [ ] cabaret sauvage
+* [ ] alhambra
