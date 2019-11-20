@@ -2,6 +2,7 @@
 
 import urllib3, bs4, locale
 import datetime as dt
+import dateparser
 
 # use another lib for handling timezones ?
 
@@ -29,7 +30,6 @@ soup = bs4.BeautifulSoup(r.data, features="html.parser")
 events = soup.select("li.event")
 
 # set locale FR en fonction de Windows ou Linux (pas la même syntaxe)
-locale.setlocale(locale.LC_ALL, "fr_FR.utf8")
 today_day = dt.datetime.today().day
 today_month = dt.datetime.today().month
 today_year = dt.datetime.today().year
@@ -53,30 +53,23 @@ for event in events:
     if date != "":
         # dates are expected to be written as "14 Janvier" or range "14 Janvier - 17 Janvier"
         for d in map(lambda x: x.strip(), date.split("-")):
-            try:
-                event_date = dt.datetime.strptime(d, "%d %B")
-            except ValueError:
+            event_date = dateparser.parse(
+                f"{d} {time}",
+                languages=["fr"],
+                settings={
+                    "TIMEZONE": "Europe/Paris",
+                    "RETURN_AS_TIMEZONE_AWARE": True,
+                    "PREFER_DATES_FROM": "future",
+                },
+            )
+            if event_date is None:
                 print("Could not parse date: ", d)
                 continue
-            # which year ? all events are in the future
-            if event_date.month > today_month:
-                year = today_year
-            elif event_date.month < today_month:
-                year = today_year + 1
-            else:
-                if event_date.day >= today_day:
-                    year = today_year
-                else:
-                    year = today_year + 1
+            # which year ? all events are either today or in the future
+            if event_date.day == today_day and event_date.month == today_month:
+                event_date = event_date.replace(year=today_year)
 
-            event_date = event_date.replace(year=year)
-
-            if time != "":
-                t = dt.datetime.strptime(time, "%H:%M")
-                event_date = event_date.replace(hour=t.hour, minute=t.minute)
-                event_date_str = event_date.strftime("%d/%m/%Y %H:%M")
-            else:
-                event_date_str = event_date.strftime("%d/%m/%Y")
+            if time == "":
                 event_date = event_date.date()
 
             dates.append(event_date)

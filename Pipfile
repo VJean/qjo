@@ -9,6 +9,7 @@ black = "*"
 [packages]
 beautifulsoup4 = "*"
 urllib3 = "*"
+dateparser = "*"
 
 [requires]
 python_version = "3.8"
