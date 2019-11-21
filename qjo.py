@@ -4,8 +4,6 @@ import urllib3, bs4, locale
 import datetime as dt
 import dateparser
 
-# use another lib for handling timezones ?
-
 
 class Concert:
     def __init__(self, artist, date, venue, infos=None):
@@ -29,7 +27,6 @@ r = http.request("GET", "http://www.lamaroquinerie.fr/fr/agenda/")
 soup = bs4.BeautifulSoup(r.data, features="html.parser")
 events = soup.select("li.event")
 
-# set locale FR en fonction de Windows ou Linux (pas la même syntaxe)
 today_day = dt.datetime.today().day
 today_month = dt.datetime.today().month
 today_year = dt.datetime.today().year
