@@ -6,7 +6,8 @@ import datetime as dt
 import dateparser
 
 class Maroquinerie(models.VenueParser):
-    def get_events():
+    @classmethod
+    def get_events(cls):
         http = urllib3.PoolManager()
         r = http.request("GET", "http://www.lamaroquinerie.fr/fr/agenda/")
         soup = bs4.BeautifulSoup(r.data, features="html.parser")

@@ -2,4 +2,6 @@
 
 from .maro import Maroquinerie
 
-__all__=['Maroquinerie']
+__all__=[]
+
+venues = { Maroquinerie.get_name() : Maroquinerie }

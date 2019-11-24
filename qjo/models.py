@@ -2,7 +2,12 @@
 
 
 class VenueParser:
-    def get_events(self):
+    @classmethod
+    def get_name(cls):
+        return cls.name if hasattr(cls, 'name') else cls.__name__
+
+    @classmethod
+    def get_events(cls):
         raise NotImplementedError()
 
 

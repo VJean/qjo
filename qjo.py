@@ -4,8 +4,10 @@ import urllib3, bs4, locale
 import datetime as dt
 import dateparser
 
-from qjo.venues import Maroquinerie
+from qjo.venues import venues
 
+print("Available venues: ", venues.keys())
 
-for c in Maroquinerie.get_events():
-    print(c)
+if 'Maroquinerie' in venues.keys():
+    print(venues['Maroquinerie'].get_events())
+
