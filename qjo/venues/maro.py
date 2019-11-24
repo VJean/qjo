@@ -5,7 +5,7 @@ import urllib3, bs4, locale
 import datetime as dt
 import dateparser
 
-class Maroquinerie(models.VenueParser):
+class Maroquinerie(models.Venue):
     @classmethod
     def get_events(cls):
         http = urllib3.PoolManager()
@@ -58,15 +58,15 @@ class Maroquinerie(models.VenueParser):
                     dates.append(event_date)
         
                 if len(dates) == 1:
-                    concerts.append(models.Concert(title, dates[0], "La Maroquinerie", details))
+                    concerts.append(models.Concert(title, dates[0], details))
                 elif len(dates) == 2:
                     # unpack
                     first, last = dates
                     # generate dates range
-                    concerts.append(models.Concert(title, first, "La Maroquinerie", details))
+                    concerts.append(models.Concert(title, first, details))
                     while first != last:
                         first = first + dt.timedelta(days=1)
-                        concerts.append(models.Concert(title, first, "La Maroquinerie", details))
+                        concerts.append(models.Concert(title, first, details))
                 else:
                     print("Got a strange date format : ", date)
                     continue

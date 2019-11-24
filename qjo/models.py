@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-class VenueParser:
+class Venue:
     @classmethod
     def get_name(cls):
         return cls.name if hasattr(cls, 'name') else cls.__name__
@@ -12,17 +12,16 @@ class VenueParser:
 
 
 class Concert:
-    def __init__(self, artist, date, venue, infos=None):
+    def __init__(self, artist, date, infos=None):
         """
         'date' should hold following types: date or datetime
         """
         self.artist = artist
         self.date = date
-        self.venue = venue
         self.infos = infos
 
     def __repr__(self):
-        rep_str = f"{str(self.date)}: {self.artist}, {self.venue}"
+        rep_str = f"{str(self.date)}: {self.artist}"
         if self.infos is not None:
             rep_str += f" ({self.infos})"
         return rep_str
