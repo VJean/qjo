@@ -2,6 +2,9 @@
 
 
 class Venue:
+    url = NotImplemented
+    address = NotImplemented
+
     @classmethod
     def get_name(cls):
         return cls.name if hasattr(cls, 'name') else cls.__name__

@@ -6,6 +6,9 @@ import datetime as dt
 import dateparser
 
 class Maroquinerie(models.Venue):
+    url = "Rue Boyer, 75020 Paris"
+    address = "http://www.lamaroquinerie.fr"
+
     @classmethod
     def get_events(cls):
         http = urllib3.PoolManager()
