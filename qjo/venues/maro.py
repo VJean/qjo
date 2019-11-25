@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from .. import models
-import urllib3, bs4, locale
+import urllib3, bs4
 import datetime as dt
 import dateparser
 
