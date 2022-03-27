@@ -37,4 +37,7 @@ def get_followed_artists():
 print("Available venues: ", venues.keys())
 
 if "Maroquinerie" in venues.keys():
-    print(venues["Maroquinerie"].get_events())
+    print("Maroquinerie:", format(len(venues["Maroquinerie"].get_events())), "events")
+
+if "Le Trianon" in venues.keys():
+    print("Trianon:", len(venues["Le Trianon"].get_events()), "events")
