@@ -2,8 +2,19 @@
 
 from .. import models
 import urllib3, bs4
-import datetime as dt
+from datetime import datetime, timedelta
 import dateparser
+
+def parse_date(date: str) -> datetime:
+    return dateparser.parse(
+        date,
+        languages=["fr"],
+        settings={
+            "TIMEZONE": "Europe/Paris",
+            "RETURN_AS_TIMEZONE_AWARE": True,
+            "PREFER_DATES_FROM": "future",
+        },
+    )
 
 class Trianon(models.Venue):
     name = "Le Trianon"
@@ -28,6 +39,17 @@ class Trianon(models.Venue):
             title = title.string.strip()
             date = date.string.strip()
             # Date is either a single date or a range of dates
-
+            if date.startswith("From"):
+                # string is like: 'From dd/mm/yyyy to dd/mm/yyyy'
+                tokens = date.split()
+                current_date = parse_date(tokens[1])
+                end_date = parse_date(tokens[3])
+                # Iterate over range:
+                while current_date <= end_date:
+                    concerts.append(models.Concert(title, current_date))
+                    current_date += timedelta(days=1)
+            else:
+                parsed_date = parse_date(date)
+                concerts.append(models.Concert(title, parsed_date))
         
         return concerts
