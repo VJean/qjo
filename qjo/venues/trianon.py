@@ -7,8 +7,8 @@ import dateparser
 
 class Trianon(models.Venue):
     name = "Le Trianon"
-    url = "80 Bd de Rochechouart, 75018 Paris"
-    address = "https://www.letrianon.fr"
+    url = "https://www.letrianon.fr"
+    address = "80 Bd de Rochechouart, 75018 Paris"
 
     @classmethod
     def get_events(cls):
