@@ -5,6 +5,7 @@ import urllib3, bs4
 from datetime import datetime, timedelta
 import dateparser
 
+
 def parse_date(date: str) -> datetime:
     return dateparser.parse(
         date,
@@ -16,6 +17,7 @@ def parse_date(date: str) -> datetime:
         },
     )
 
+
 class Trianon(models.Venue):
     name = "Le Trianon"
     url = "https://www.letrianon.fr"
@@ -26,7 +28,7 @@ class Trianon(models.Venue):
         http = urllib3.PoolManager()
         r = http.request("GET", "https://www.letrianon.fr/uk/billetterie")
         soup = bs4.BeautifulSoup(r.data, features="html.parser")
-        
+
         concerts = []
 
         events = soup.select("div.infos")
@@ -51,5 +53,5 @@ class Trianon(models.Venue):
             else:
                 parsed_date = parse_date(date)
                 concerts.append(models.Concert(title, parsed_date))
-        
+
         return concerts

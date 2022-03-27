@@ -3,7 +3,6 @@
 from .maro import Maroquinerie
 from .trianon import Trianon
 
-__all__=[]
+__all__ = []
 
-venues = { Maroquinerie.get_name() : Maroquinerie,
-Trianon.get_name(): Trianon }
+venues = {Maroquinerie.get_name(): Maroquinerie, Trianon.get_name(): Trianon}
