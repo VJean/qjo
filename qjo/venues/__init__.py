@@ -5,4 +5,4 @@ from .trianon import Trianon
 
 __all__ = []
 
-venues = {Maroquinerie.get_name(): Maroquinerie, Trianon.get_name(): Trianon}
+venues = [Maroquinerie, Trianon]
