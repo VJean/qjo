@@ -24,10 +24,12 @@ class Trianon(models.Venue):
 
     @classmethod
     def get_events(cls):
-        soup = cls.get_soup("https://www.letrianon.fr/uk/billetterie")
+        soup = cls._get_soup("https://www.letrianon.fr/uk/billetterie")
 
-        concerts = []
+        return cls._soup_to_concerts(soup)
 
+    @classmethod
+    def _soup_to_concerts(cls, soup, concerts=[]):
         events = soup.select("div.infos")
         for event in events:
             title = event.find("p", class_="titre")

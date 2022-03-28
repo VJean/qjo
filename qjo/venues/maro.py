@@ -10,16 +10,12 @@ class Maroquinerie(models.Venue):
     address = "http://www.lamaroquinerie.fr"
 
     @classmethod
-    def get_events(cls):
-        soup = cls.get_soup("http://www.lamaroquinerie.fr/fr/agenda/")
-
+    def _soup_to_concerts(cls, soup, concerts=[]):
         events = soup.select("li.event")
 
         today_day = dt.datetime.today().day
         today_month = dt.datetime.today().month
         today_year = dt.datetime.today().year
-
-        concerts = []
 
         for event in events:
             title = event.find("h2")
@@ -77,3 +73,9 @@ class Maroquinerie(models.Venue):
                     print("Got a strange date format : ", date)
                     continue
         return concerts
+
+    @classmethod
+    def get_events(cls):
+        soup = cls._get_soup("http://www.lamaroquinerie.fr/fr/agenda/")
+
+        return cls._soup_to_concerts(soup)
