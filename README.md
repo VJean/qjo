@@ -48,3 +48,4 @@ Also, i've-no-idea-how-to-name-my-project-so-let's-use-the-name-of-a-divinity :
 
 ## TODO
 * Use a global `requests.Session` to avoid creating one for each venue parser
+* Parallelize the parsers
