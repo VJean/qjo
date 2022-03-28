@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from .. import models
-import urllib3, bs4
 import datetime as dt
 import dateparser
 
@@ -12,9 +11,8 @@ class Maroquinerie(models.Venue):
 
     @classmethod
     def get_events(cls):
-        http = urllib3.PoolManager()
-        r = http.request("GET", "http://www.lamaroquinerie.fr/fr/agenda/")
-        soup = bs4.BeautifulSoup(r.data, features="html.parser")
+        soup = cls.get_soup("http://www.lamaroquinerie.fr/fr/agenda/")
+
         events = soup.select("li.event")
 
         today_day = dt.datetime.today().day

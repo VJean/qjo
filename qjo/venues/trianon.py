@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from .. import models
-import urllib3, bs4
 from datetime import datetime, timedelta
 import dateparser
 
@@ -25,9 +24,7 @@ class Trianon(models.Venue):
 
     @classmethod
     def get_events(cls):
-        http = urllib3.PoolManager()
-        r = http.request("GET", "https://www.letrianon.fr/uk/billetterie")
-        soup = bs4.BeautifulSoup(r.data, features="html.parser")
+        soup = cls.get_soup("https://www.letrianon.fr/uk/billetterie")
 
         concerts = []
 

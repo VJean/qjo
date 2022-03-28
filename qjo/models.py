@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+from bs4 import BeautifulSoup
+import urllib3, bs4
+
 
 class Venue:
     url = NotImplemented
@@ -12,6 +15,12 @@ class Venue:
     @classmethod
     def get_events(cls):
         raise NotImplementedError()
+
+    @staticmethod
+    def get_soup(url: str) -> BeautifulSoup:
+        http = urllib3.PoolManager()
+        r = http.request("GET", url)
+        return bs4.BeautifulSoup(r.data, features="html.parser")
 
 
 class Concert:
