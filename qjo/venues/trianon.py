@@ -42,10 +42,10 @@ class Trianon(models.Venue):
                 end_date = parse_date(tokens[3])
                 # Iterate over range:
                 while current_date <= end_date:
-                    concerts.append(models.Concert(title, current_date))
+                    concerts.append(models.Concert(title, current_date, cls))
                     current_date += timedelta(days=1)
             else:
                 parsed_date = parse_date(date)
-                concerts.append(models.Concert(title, parsed_date))
+                concerts.append(models.Concert(title, parsed_date, cls))
 
         return concerts

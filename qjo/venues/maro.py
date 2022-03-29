@@ -62,15 +62,15 @@ class Maroquinerie(models.Venue):
                     dates.append(event_date)
 
                 if len(dates) == 1:
-                    concerts.append(models.Concert(title, dates[0], details))
+                    concerts.append(models.Concert(title, dates[0], cls, details))
                 elif len(dates) == 2:
                     # unpack
                     first, last = dates
                     # generate dates range
-                    concerts.append(models.Concert(title, first, details))
+                    concerts.append(models.Concert(title, first, cls, details))
                     while first != last:
                         first = first + dt.timedelta(days=1)
-                        concerts.append(models.Concert(title, first, details))
+                        concerts.append(models.Concert(title, first, cls, details))
                 else:
                     print("Got a strange date format : ", date)
                     continue

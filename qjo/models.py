@@ -17,16 +17,17 @@ class Address:
 
 
 class Concert:
-    def __init__(self, artist, date, infos=None):
+    def __init__(self, artist, date, venue, infos=None):
         """
         'date' should hold following types: date or datetime
         """
         self.artist = artist
         self.date = date
         self.infos = infos
+        self.venue = venue
 
     def __repr__(self):
-        rep_str = f"{str(self.date)}: {self.artist}"
+        rep_str = f"{str(self.date)}: {self.artist} at {self.venue.get_name()}"
         if self.infos is not None:
             rep_str += f" ({self.infos})"
         return rep_str
