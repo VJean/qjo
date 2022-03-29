@@ -3,6 +3,7 @@
 from typing import Sequence, List
 from bs4 import BeautifulSoup
 import urllib3, bs4
+from urllib3 import PoolManager
 
 
 class Address:
@@ -41,8 +42,8 @@ class Venue:
         return cls.name if hasattr(cls, "name") else cls.__name__
 
     @classmethod
-    def get_events(cls):
-        soup = cls._get_agenda_html()
+    def get_events(cls, http_pool: PoolManager):
+        soup = cls._get_agenda_html(http_pool)
         return cls._soup_to_concerts(soup)
 
     @classmethod
@@ -52,11 +53,10 @@ class Venue:
         raise NotImplementedError()
 
     @classmethod
-    def _get_agenda_html(cls) -> BeautifulSoup:
-        return cls._get_soup(cls.agenda_url)
+    def _get_agenda_html(cls, http_pool: PoolManager) -> BeautifulSoup:
+        return cls._get_soup(cls.agenda_url, http_pool)
 
     @staticmethod
-    def _get_soup(url: str) -> BeautifulSoup:
-        http = urllib3.PoolManager()
-        r = http.request("GET", url)
+    def _get_soup(url: str, http_pool: PoolManager) -> BeautifulSoup:
+        r = http_pool.request("GET", url)
         return bs4.BeautifulSoup(r.data, features="html.parser")

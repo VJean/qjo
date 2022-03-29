@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import urllib3
 import config
 from qjo.venues import venues
 
@@ -34,5 +35,6 @@ def get_followed_artists():
     return artists
 
 
-for venue in venues:
-    print(f"{venue.get_name()}: {len(venue.get_events())} events")
+with urllib3.PoolManager() as http_pool:
+    for venue in venues:
+        print(f"{venue.get_name()}: {len(venue.get_events(http_pool))} events")
