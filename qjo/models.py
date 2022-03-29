@@ -23,6 +23,7 @@ class Concert:
 
 class Venue:
     url = NotImplemented
+    agenda_url = NotImplemented
     address = NotImplemented
 
     @classmethod
@@ -31,13 +32,18 @@ class Venue:
 
     @classmethod
     def get_events(cls):
-        raise NotImplementedError()
+        soup = cls._get_agenda_html()
+        return cls._soup_to_concerts(soup)
 
     @classmethod
     def _soup_to_concerts(
         cls, soup: BeautifulSoup, concerts: Sequence[Concert]
     ) -> List[Concert]:
         raise NotImplementedError()
+
+    @classmethod
+    def _get_agenda_html(cls) -> BeautifulSoup:
+        return cls._get_soup(cls.agenda_url)
 
     @staticmethod
     def _get_soup(url: str) -> BeautifulSoup:

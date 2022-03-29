@@ -8,6 +8,7 @@ import dateparser
 class Maroquinerie(models.Venue):
     name = "La Maroquinerie"
     url = "http://www.lamaroquinerie.fr"
+    agenda_url = "http://www.lamaroquinerie.fr/fr/agenda"
     address = "Rue Boyer, 75020 Paris"
 
     @classmethod
@@ -74,9 +75,3 @@ class Maroquinerie(models.Venue):
                     print("Got a strange date format : ", date)
                     continue
         return concerts
-
-    @classmethod
-    def get_events(cls):
-        soup = cls._get_soup("http://www.lamaroquinerie.fr/fr/agenda/")
-
-        return cls._soup_to_concerts(soup)

@@ -20,13 +20,8 @@ def parse_date(date: str) -> datetime:
 class Trianon(models.Venue):
     name = "Le Trianon"
     url = "https://www.letrianon.fr"
+    agenda_url = "https://www.letrianon.fr/uk/billetterie"
     address = "80 Bd de Rochechouart, 75018 Paris"
-
-    @classmethod
-    def get_events(cls):
-        soup = cls._get_soup("https://www.letrianon.fr/uk/billetterie")
-
-        return cls._soup_to_concerts(soup)
 
     @classmethod
     def _soup_to_concerts(cls, soup, concerts=[]):
