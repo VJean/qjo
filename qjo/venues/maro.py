@@ -6,8 +6,9 @@ import dateparser
 
 
 class Maroquinerie(models.Venue):
-    url = "Rue Boyer, 75020 Paris"
-    address = "http://www.lamaroquinerie.fr"
+    name = "La Maroquinerie"
+    url = "http://www.lamaroquinerie.fr"
+    address = "Rue Boyer, 75020 Paris"
 
     @classmethod
     def _soup_to_concerts(cls, soup, concerts=[]):
