@@ -48,3 +48,4 @@ Also, i've-no-idea-how-to-name-my-project-so-let's-use-the-name-of-a-divinity :
 
 ## TODO
 * Parallelize the parsers
+* Implement rich comparison methods in Concert so that they can be sorted by date and venue
