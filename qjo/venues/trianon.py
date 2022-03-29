@@ -21,7 +21,7 @@ class Trianon(models.Venue):
     name = "Le Trianon"
     url = "https://www.letrianon.fr"
     agenda_url = "https://www.letrianon.fr/uk/billetterie"
-    address = "80 Bd de Rochechouart, 75018 Paris"
+    address = models.Address("80 Bd de Rochechouart, 75018 Paris", "Paris", "France")
 
     @classmethod
     def _soup_to_concerts(cls, soup, concerts=[]):

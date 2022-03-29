@@ -9,7 +9,7 @@ class Maroquinerie(models.Venue):
     name = "La Maroquinerie"
     url = "http://www.lamaroquinerie.fr"
     agenda_url = "http://www.lamaroquinerie.fr/fr/agenda"
-    address = "Rue Boyer, 75020 Paris"
+    address = models.Address("Rue Boyer, 75020 Paris", "Paris", "France")
 
     @classmethod
     def _soup_to_concerts(cls, soup, concerts=[]):

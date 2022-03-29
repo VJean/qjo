@@ -5,6 +5,16 @@ from bs4 import BeautifulSoup
 import urllib3, bs4
 
 
+class Address:
+    def __init__(self, full, city, country):
+        self.full = full
+        self.city = city
+        self.country = country
+
+    def __repr__(self):
+        return f"{self.full} ({self.city}, {self.country})"
+
+
 class Concert:
     def __init__(self, artist, date, infos=None):
         """
