@@ -37,14 +37,15 @@ class Venue:
     url = NotImplemented
     agenda_url = NotImplemented
     address = NotImplemented
+    http_pool = PoolManager()
 
     @classmethod
     def get_name(cls):
         return cls.name if hasattr(cls, "name") else cls.__name__
 
     @classmethod
-    def get_events(cls, http_pool: PoolManager):
-        soup = cls._get_agenda_html(http_pool)
+    def get_events(cls):
+        soup = cls._get_agenda_html()
         return cls._soup_to_concerts(soup)
 
     @classmethod
@@ -54,10 +55,10 @@ class Venue:
         raise NotImplementedError()
 
     @classmethod
-    def _get_agenda_html(cls, http_pool: PoolManager) -> BeautifulSoup:
-        return cls._get_soup(cls.agenda_url, http_pool)
+    def _get_agenda_html(cls) -> BeautifulSoup:
+        return cls._get_soup(cls.agenda_url)
 
-    @staticmethod
-    def _get_soup(url: str, http_pool: PoolManager) -> BeautifulSoup:
-        r = http_pool.request("GET", url)
+    @classmethod
+    def _get_soup(cls, url: str) -> BeautifulSoup:
+        r = cls.http_pool.request("GET", url)
         return bs4.BeautifulSoup(r.data, features="html.parser")

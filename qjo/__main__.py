@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-import urllib3
 import config
 from qjo.venues import venues
+from multiprocessing import Pool
 
 
 def get_followed_artists():
@@ -35,6 +35,6 @@ def get_followed_artists():
     return artists
 
 
-with urllib3.PoolManager() as http_pool:
-    for venue in venues:
-        print(f"{venue.get_name()}: {len(venue.get_events(http_pool))} events")
+with Pool() as pool:
+    events = [pool.apply_async(venue.get_events, ()) for venue in venues]
+    print([res.get() for res in events])
