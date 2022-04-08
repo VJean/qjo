@@ -18,8 +18,14 @@ def load_local_html(v: Venue) -> BeautifulSoup:
 
 class TestVenues(unittest.TestCase):
     def setUp(self) -> None:
-        Maroquinerie._get_agenda_html = Mock(return_value=BeautifulSoup(load_local_html(Maroquinerie), features="html.parser"))
-        Trianon._get_agenda_html = Mock(return_value=BeautifulSoup(load_local_html(Trianon), features="html.parser"))
+        Maroquinerie._get_agenda_html = Mock(
+            return_value=BeautifulSoup(
+                load_local_html(Maroquinerie), features="html.parser"
+            )
+        )
+        Trianon._get_agenda_html = Mock(
+            return_value=BeautifulSoup(load_local_html(Trianon), features="html.parser")
+        )
 
     def test_maroquinerie(self):
         events = Maroquinerie.get_events()
@@ -33,6 +39,7 @@ class TestVenues(unittest.TestCase):
 
     def tearDown(self) -> None:
         pass
+
 
 if __name__ == "__main__":
     unittest.main()
