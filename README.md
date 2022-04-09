@@ -43,7 +43,7 @@ Also, i've-no-idea-how-to-name-my-project-so-let's-use-the-name-of-a-divinity :
 * [ ] petit bain
 * [ ] trabendo
 * [ ] bataclan
-* [ ] cabaret sauvage
+* [x] cabaret sauvage
 * [ ] alhambra
 
 ## TODO
