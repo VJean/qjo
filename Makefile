@@ -7,4 +7,4 @@ test:
 		python3 -m tests.save;\
 	fi
 	@echo Running the tests
-	python3 -m unittest test_qjo.py
+	python3 -m unittest tests/test_qjo.py
