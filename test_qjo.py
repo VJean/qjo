@@ -11,7 +11,6 @@ def load_local_html(v: Venue) -> BeautifulSoup:
     venue_name = v.__name__.lower()
     path = f"tests/agendas/{venue_name}.html"
     with open(path) as f:
-        print("reading ", path)
         content = f.read()
         return content
 
