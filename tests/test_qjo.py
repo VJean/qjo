@@ -26,7 +26,9 @@ class TestVenues(unittest.TestCase):
             return_value=BeautifulSoup(load_local_html(Trianon), features="html.parser")
         )
         CabaretSauvage._get_agenda_html = Mock(
-            return_value=BeautifulSoup(load_local_html(CabaretSauvage), features="html.parser")
+            return_value=BeautifulSoup(
+                load_local_html(CabaretSauvage), features="html.parser"
+            )
         )
 
     def test_maroquinerie(self):
@@ -42,7 +44,7 @@ class TestVenues(unittest.TestCase):
     def test_cabaret_sauvage(self):
         events = CabaretSauvage.get_events()
         CabaretSauvage._get_agenda_html.assert_called()
-        self.assertGreater(len(events), 0)
+        self.assertEqual(len(events), 23)
 
     def tearDown(self) -> None:
         pass
