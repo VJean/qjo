@@ -34,12 +34,12 @@ class TestVenues(unittest.TestCase):
     def test_maroquinerie(self):
         events = Maroquinerie.get_events()
         Maroquinerie._get_agenda_html.assert_called()
-        self.assertGreater(len(events), 0)
+        self.assertEqual(len(events), 50)
 
     def test_trianon(self):
         events = Trianon.get_events()
         Trianon._get_agenda_html.assert_called()
-        self.assertGreater(len(events), 0)
+        self.assertEqual(len(events), 115)
 
     def test_cabaret_sauvage(self):
         events = CabaretSauvage.get_events()

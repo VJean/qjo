@@ -4,5 +4,3 @@ venv
 config.py
 # spotipy
 .cache
-# test files
-tests/agendas

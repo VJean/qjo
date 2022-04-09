@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link href="https://www.letrianon.fr/fr/billetterie" hreflang="fr" rel="alternate"/>
+<link href="https://www.letrianon.fr/uk/billetterie" hreflang="en" rel="alternate"/>
+<link href="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/trianon-favicon-HD.jpg" rel="shortcut icon" type="image/jpeg"/>
+<meta content="uk" name="language">
+<meta content="Drupal 7 (https://www.drupal.org)" name="generator"/>
+<link href="https://www.letrianon.fr/uk/billetterie" rel="canonical"/>
+<link href="https://www.letrianon.fr/uk/billetterie" rel="shortlink"/>
+<meta content="Le Trianon – Paris / Site officiel" property="og:site_name"/>
+<meta content="article" property="og:type"/>
+<meta content="https://www.letrianon.fr/uk/billetterie" property="og:url"/>
+<meta content="Billetterie" property="og:title"/>
+<title>Billetterie | Le Trianon – Paris / Site officiel</title>
+<style media="all" type="text/css">
+@import url("https://www.letrianon.fr/modules/system/system.base.css?ra1pfd");
+@import url("https://www.letrianon.fr/modules/system/system.menus.css?ra1pfd");
+@import url("https://www.letrianon.fr/modules/system/system.messages.css?ra1pfd");
+@import url("https://www.letrianon.fr/modules/system/system.theme.css?ra1pfd");
+</style>
+<style media="all" type="text/css">
+@import url("https://www.letrianon.fr/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?ra1pfd");
+</style>
+<style media="all" type="text/css">
+@import url("https://www.letrianon.fr/sites/all/modules/contrib/date/date_api/date.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/contrib/date/date_repeat_field/date_repeat_field.css?ra1pfd");
+@import url("https://www.letrianon.fr/modules/field/theme/field.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/custom/generic/generic_tags/css/generic_tags.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/contrib/logintoboggan/logintoboggan.css?ra1pfd");
+@import url("https://www.letrianon.fr/modules/node/node.css?ra1pfd");
+@import url("https://www.letrianon.fr/modules/search/search.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/contrib/ubercart/uc_order/uc_order.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/contrib/ubercart/uc_product/uc_product.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/contrib/ubercart/uc_store/uc_store.css?ra1pfd");
+@import url("https://www.letrianon.fr/modules/user/user.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/custom/wlp/wlp_eticket/css/eticket.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/contrib/views/css/views.css?ra1pfd");
+</style>
+<style media="all" type="text/css">
+@import url("https://www.letrianon.fr/sites/all/modules/contrib/ctools/css/ctools.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/custom/generic/generic_catalog/css/generic_catalog.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/custom/generic/generic_promo/css/promo_front.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/custom/generic/generic_tags/css/ctools-popin.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/contrib/ctools/css/modal.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/modules/custom/generic/generic_core/css/generic_core.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/all/libraries/jquery.bxslider/jquery.bxslider.css?ra1pfd");
+@import url("https://www.letrianon.fr/modules/locale/locale.css?ra1pfd");
+</style>
+<style media="all" type="text/css">
+@import url("https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/css/reset.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/css/style.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/css/bootstrap.min.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/css/common.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/css/tablette.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/css/mobile.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/css/generic_package.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/css/custom.css?ra1pfd");
+@import url("https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/css/maintenance.css?ra1pfd");
+</style>
+<!-- HTML5 element support for IE6-8 -->
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<script src="https://www.letrianon.fr/sites/all/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/misc/jquery-extend-3.4.0.js?v=1.7.2" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.7.2" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/misc/jquery.once.js?v=1.2" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/misc/drupal.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/modules/contrib/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/modules/contrib/jquery_update/replace/misc/jquery.form.min.js?v=2.69" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/misc/ajax.js?v=7.89" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/modules/contrib/jquery_update/js/jquery_update.js?v=0.0.1" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/modules/custom/generic/generic_core/js/popup_error.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/modules/wlp_profile/js/wlp_profile.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/modules/custom/generic/generic_package/js/generic_package.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/modules/custom/generic/generic_uc_cart_content/js/countdown.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/languages/uk_t894I0TFByBpEygJITm96rOjBK3n45D-Dh8WrqCXkzk.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/libraries/tiptip/jquery.tiptip.js?ra1pfd" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var lang = 'uk';
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var user = 0;
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+language_active = false;
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var data_genre = 0;
+//--><!]]>
+</script>
+<script src="https://www.letrianon.fr/sites/all/modules/custom/generic/generic_seat_mode/js/pano/swfobject/krpanoiphone.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/modules/custom/generic/generic_tags/js/bandeau_cookie.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/misc/progress.js?v=7.89" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/modules/contrib/ctools/js/modal.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/modules/custom/generic/generic_core/js/jquery.dataTables.min.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/modules/custom/generic/generic_alertes/js/generic_alertes.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/modules/contrib/google_analytics/googleanalytics.js?ra1pfd" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-92418730-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/js/jquery-ui-1.10.3.min.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/js/jquery.busybox.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/js/panzoom.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/js/hammer.min.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/all/libraries/jquery.bxslider/jquery.bxslider.min.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/js/global.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/js/masonry.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/js/blowup.min.js?ra1pfd" type="text/javascript"></script>
+<script src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/themes/trianon/js/customtrianon.js?ra1pfd" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"uk\/","setHasJsCookie":0,"ajaxPageState":{"theme":"trianon","theme_token":"ygBuAFtnXg0OEP83_Kl1t_NzfdMSfGOjWutGGmiN2Ds","jquery_version":"1.7","js":{"0":1,"1":1,"2":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/custom\/generic\/generic_core\/js\/popup_error.js":1,"sites\/trianon7.ap2s.fr\/modules\/wlp_profile\/js\/wlp_profile.js":1,"sites\/all\/modules\/custom\/generic\/generic_package\/js\/generic_package.js":1,"sites\/all\/modules\/custom\/generic\/generic_uc_cart_content\/js\/countdown.js":1,"public:\/\/languages\/uk_t894I0TFByBpEygJITm96rOjBK3n45D-Dh8WrqCXkzk.js":1,"sites\/all\/libraries\/tiptip\/jquery.tiptip.js":1,"3":1,"4":1,"5":1,"6":1,"sites\/all\/modules\/custom\/generic\/generic_seat_mode\/js\/pano\/swfobject\/krpanoiphone.js":1,"sites\/all\/modules\/custom\/generic\/generic_tags\/js\/bandeau_cookie.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/modal.js":1,"sites\/all\/modules\/custom\/generic\/generic_core\/js\/jquery.dataTables.min.js":1,"sites\/all\/modules\/custom\/generic\/generic_alertes\/js\/generic_alertes.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"7":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/js\/jquery-ui-1.10.3.min.js":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/js\/jquery.busybox.js":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/js\/panzoom.js":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/js\/hammer.min.js":1,"sites\/all\/libraries\/jquery.bxslider\/jquery.bxslider.min.js":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/js\/global.js":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/js\/masonry.js":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/js\/blowup.min.js":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/js\/customtrianon.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/custom\/generic\/generic_tags\/css\/generic_tags.css":1,"sites\/all\/modules\/contrib\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/contrib\/ubercart\/uc_order\/uc_order.css":1,"sites\/all\/modules\/contrib\/ubercart\/uc_product\/uc_product.css":1,"sites\/all\/modules\/contrib\/ubercart\/uc_store\/uc_store.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/custom\/wlp\/wlp_eticket\/css\/eticket.css":1,"sites\/all\/modules\/custom\/generic\/generic_package\/css\/generic_package.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/custom\/generic\/generic_catalog\/css\/generic_catalog.css":1,"sites\/all\/modules\/custom\/generic\/generic_promo\/css\/promo_front.css":1,"sites\/all\/modules\/custom\/generic\/generic_tags\/css\/ctools-popin.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/modal.css":1,"sites\/all\/modules\/custom\/generic\/generic_core\/css\/generic_core.css":1,"sites\/all\/libraries\/jquery.bxslider\/jquery.bxslider.css":1,"modules\/locale\/locale.css":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/css\/reset.css":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/css\/style.css":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/css\/bootstrap.min.css":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/css\/common.css":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/css\/tablette.css":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/css\/mobile.css":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/css\/generic_package.css":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/css\/custom.css":1,"sites\/trianon7.ap2s.fr\/themes\/trianon\/css\/maintenance.css":1}},"alerts":{"loging_access":1,"confirm_delete":1,"title_confirm_delete_alerts":"Removing the alert"},"uc_currency":{"sign":"\u20ac","sign_after":1,"prec":"2","dec":",","thou":""},"collapsed_fields":"compte","desactivate_scroll_malp":0,"nb_max_multi_download":"20","type_tri_prix":"price","generic_slider":{"slideWidth":"","maxSlides":"","auto":false},"generic_seat_mode":{"seat_mode_mobile_default_sale_mode":0,"seat_mode_desktop_default_sale_mode":false,"disable_malp":false},"seat_mode_krpano_swf":"\/sites\/all\/modules\/custom\/generic\/generic_seat_mode\/js\/pano\/swfobject\/krpano.swf","seat_mode_display_category_blocktooltip":0,"seat_mode_always_display_price_choice":0,"seat_mode_skip_compare_block":0,"seat_mode_active_fast_reservation":0,"seat_mode_show_category_legend":false,"seat_mode_category_legend_color":"","seat_mode_display_map_zoom":true,"CToolsModal":{"loadingText":"Loading...","closeText":"Close Window","closeImage":"\u003Cimg src=\u0022https:\/\/www.letrianon.fr\/sites\/all\/modules\/contrib\/ctools\/images\/icon-close-window.png\u0022 alt=\u0022Close window\u0022 title=\u0022Close window\u0022 \/\u003E","throbber":"\u003Cimg src=\u0022https:\/\/www.letrianon.fr\/sites\/all\/modules\/contrib\/ctools\/images\/throbber.gif\u0022 alt=\u0022Loading\u0022 title=\u0022Loading...\u0022 \/\u003E"},"manage-cookies-style":{"modalSize":{"type":"fixed","width":650,"height":550},"modalTheme":"CtoolsCookiesManageStyle"},"bandeau_cookie":{"link":"#","background_color":"#010102","link_color":"#FFFFFF","display_type":1,"mangage_link":1,"mangage_modal":1,"id_tags":"","id_cookie":"bdsp"},"warning_remaining_time_popin":0,"warning_remaining_time_number":"300","custom":{"lang_code":"uk"},"uc_cart":{"uc_cart_url":"\/uk\/generic_uc_cart_content_update.xhr"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"theme":{"loader":"\u003Cdiv style=\u0022display:inline;text-align:center;font-size:12px;font-weight:bold;top:25%\u0022\u003EPlease wait\u003Cbr\/\u003E\u003Cbr\/\u003E\u003Cimg src=\u0022\/sites\/trianon7.ap2s.fr\/themes\/trianon\/images\/ajax-loader.gif\u0022 alt=\u0022Loader\u0022 \/\u003E\u003C\/div\u003E"},"messages":{"title":"title_error_box"},"urlIsAjaxTrusted":{"\/uk\/billetterie?destination=billetterie":true,"\/uk\/billetterie":true}});
+//--><!]]>
+</script>
+<!--[if lte IE 9]>
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/trianon7.ap2s.fr/themes/trianon/css/ie-lte9-fix.css" />
+  <![endif]-->
+</meta></meta></head>
+<body class="html not-front not-logged-in no-sidebars page-billetterie i18n-uk">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<div id="page-wrapper">
+<div id="skip-link">
+<a class="element-invisible element-focusable" href="#main-content">Skip to main content</a>
+</div>
+<div class="seat_viewer_pop_in">
+<div class="overlay"></div>
+<div class="content">
+<div class="close"></div>
+<div class="onglets">
+<div class="onglet active" id="vue_3d">
+        3d_view      </div>
+<div class="onglet" id="point_vue">
+        point_vue      </div>
+</div>
+<div class="vue_3d vue">
+      bon
+    </div>
+<div class="point_vue vue" style="display:none;">
+      jour
+    </div>
+</div>
+</div> <div id="header_wrapper">
+<div id="header">
+<div class="logo">
+<a class="accueil" href="/"><img alt="logo" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/trianon-logo-HD_6.jpg"/></a>
+</div>
+<div class="region region-header-bottom">
+<div class="block block-user" id="block-user-login">
+<div class="content">
+<form accept-charset="UTF-8" action="/uk/billetterie?destination=billetterie" id="user-login-form" method="post"><div>
+<div class="form-item form-type-textfield form-item-name">
+<label for="edit-name">User name <span class="form-required" title="This field is required.">*</span></label>
+<input class="form-text required" id="edit-name" maxlength="60" name="name" size="15" type="text" value=""/>
+</div>
+<div class="form-item form-type-password form-item-pass">
+<label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+<input class="form-text required" id="edit-pass" maxlength="128" name="pass" size="15" type="password"/>
+</div>
+<input name="form_build_id" type="hidden" value="form-uAe97HCBeeH-WEqL6jwV0tyoq--2P4SXg01Js-XS2Oc"/>
+<input name="form_id" type="hidden" value="user_login_block"/>
+<div class="form-actions form-wrapper" id="edit-actions"><input class="form-submit" id="edit-submit--2" name="op" type="submit" value="Log in"/></div><div class="forgetpwd">
+<a href="/uk/user/password" title="Password forget?">
+    Password forget?  </a>
+</div>
+<p class="champ_obligatoire">Required fields<span class="form-required"> *</span></p>
+<div class="social_connection">
+</div>
+<div class="inscrition_part">
+<p>Not yet registered ?</p>
+<a class="inscription" href="/uk/user/register" title="Inscription">Inscription</a>
+</div>
+</div></form> </div>
+</div>
+<div class="block block-generic-uc-cart-content" id="block-generic-uc-cart-content-cart-block">
+<div class="content">
+<a class="mini-cart" href="/uk/cart">
+    Cart</a>
+<div class="menu_user">
+<a href="/user/login">
+            Log in        </a>
+</div>
+</div>
+</div>
+</div>
+<div class="social">
+<div class="region region-header-right-top">
+<div class="block block-system block-menu" id="block-system-main-menu">
+<h2>Menu principal</h2>
+<div class="content">
+<ul class="menu"><li class="first leaf active-trail"><a class="active-trail active" href="/uk/billetterie">TICKETS</a></li>
+<li class="leaf"><a href="/uk/archives">ARCHIVE</a></li>
+<li class="leaf"><a href="/uk/evenementiel">EVENT</a></li>
+<li class="leaf"><a href="/uk/photos">PHOTO</a></li>
+<li class="leaf"><a href="/uk/documents">PRO</a></li>
+<li class="leaf"><a href="/uk/infos-pratiques">INFORMATION</a></li>
+<li class="last leaf"><a href="/uk/contact">CONTACT</a></li>
+</ul> </div>
+</div>
+</div>
+</div>
+<div class="region region-header-middle-right">
+<div class="block block-locale" id="block-locale-language">
+<div class="content">
+<ul class="language-switcher-locale-url"><li class="fr first"><a class="language-link" href="/fr/billetterie" hreflang="fr" title="BILLETTERIE" xml:lang="fr"><img alt="FR" class="language-icon" height="12" src="https://www.letrianon.fr/sites/all/themes/reference7/images/flags/fr.png" title="FR" width="16"/> FR</a></li>
+<li class="uk last active"><a class="language-link active" href="/uk/billetterie" hreflang="uk" title="TICKETS" xml:lang="uk"><img alt="EN" class="language-icon" height="12" src="https://www.letrianon.fr/sites/all/themes/reference7/images/flags/uk.png" title="EN" width="16"/> EN</a></li>
+</ul> </div>
+</div>
+<div class="block block-generic-core" id="block-generic-core-recherche">
+<div class="content">
+<form accept-charset="UTF-8" action="/uk/billetterie" id="generic-core-recherche-form" method="post"><div><div class="form-item form-type-textfield form-item-recherche">
+<label for="edit-recherche">Recherche </label>
+<input class="form-text" id="edit-recherche" maxlength="128" name="recherche" placeholder="Search here..." size="60" type="text" value=""/>
+</div>
+<input class="form-submit" id="edit-submit" name="op" type="submit" value="ok"/><input name="form_build_id" type="hidden" value="form-hOWmN4PZf9lsYGtIN4gFyPmNC8tux60MZqvRiwgINSw"/>
+<input name="form_id" type="hidden" value="generic_core_recherche_form"/>
+</div></form> </div>
+</div>
+</div>
+<div class="visible-xs mobile-menu">
+<div class="nav-button">
+<div class="navbar-toggle-button">
+<span class="icon-bar top-bar"></span>
+<span class="icon-bar middle-bar">MENU</span>
+<span class="icon-bar bottom-bar"></span>
+</div>
+</div>
+<ul class="user-links">
+<li><a class="mini-cart" href="/uk/cart">Cart</a></li>
+<li class="menu_user">
+<a href="/user/login">
+                            Log in                        </a>
+</li>
+</ul>
+<ul class="links"><li class="menu-1143 active-trail first active"><a class="active-trail active" href="/uk/billetterie">TICKETS</a></li>
+<li class="menu-1144"><a href="/uk/archives">ARCHIVE</a></li>
+<li class="menu-1146"><a href="/uk/evenementiel">EVENT</a></li>
+<li class="menu-1145"><a href="/uk/photos">PHOTO</a></li>
+<li class="menu-1147"><a href="/uk/documents">PRO</a></li>
+<li class="menu-1148"><a href="/uk/infos-pratiques">INFORMATION</a></li>
+<li class="menu-1149 last"><a href="/uk/contact">CONTACT</a></li>
+</ul> <ul class="language-switcher-locale-url"><li class="fr first"><a class="language-link" href="/fr/billetterie" hreflang="fr" title="BILLETTERIE" xml:lang="fr"><img alt="FR" class="language-icon" height="12" src="https://www.letrianon.fr/sites/all/themes/reference7/images/flags/fr.png" title="FR" width="16"/> FR</a></li>
+<li class="uk last active"><a class="language-link active" href="/uk/billetterie" hreflang="uk" title="TICKETS" xml:lang="uk"><img alt="EN" class="language-icon" height="12" src="https://www.letrianon.fr/sites/all/themes/reference7/images/flags/uk.png" title="EN" width="16"/> EN</a></li>
+</ul> </div>
+</div> <!-- fin header -->
+</div> <!-- fin header_wrapper -->
+<!-- fermeture HEADER GENERALe -->
+<div class="wrapper_all_cols clearfix">
+<div id="global_wrapper">
+<div id="breadcrumb"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/uk">Home</a></div></div>
+<div class="grand_slider">
+</div>
+<div class="clearfix" id="container">
+<div class="contenu">
+<div class="content solo">
+<div class="region region-content">
+<div class="block block-generic-core" id="block-generic-core-catalogue">
+<div class="content">
+<div class="content_billetterie clearfix">
+<div class="loader_ma"> </div>
+<div class="list_catalogue_desactive"></div>
+<div class="filtres">
+<p>To simplify your research, use filters.</p>
+<div class="switch">
+<div class="bloc" title="Affichage en vignette">
+<i aria-hidden="true" class="fa fa-th-large"></i>
+</div>
+<div class="ligne" title="Affichage en liste">
+<i aria-hidden="true" class="fa fa-list"></i>
+</div>
+</div>
+<ul class="filtre">
+</ul>
+</div>
+<div class="list_catalogue">
+<div class="grid-sizer"></div>
+<div class="line unavailable long light_pink" data-genre="">
+<a href="/uk/programme/riopy">
+<div class="inner_line">
+<div class="product-overlay">
+<p>Complet</p>
+</div>
+<div class="affiche">
+<img alt="RIOPY" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/riopy-trianon.png" title="RIOPY" width=""/> </div>
+<div class="infos">
+<p class="titre">RIOPY</p>
+<p class="date" sortdate="1649872800">
+                13/04/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<div class="button sold_out">SOLD OUT                          </div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/eiffel">
+<div class="inner_line">
+<div class="affiche">
+<img alt="EIFFEL" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/eiffel-trianon.jpg" title="EIFFEL" width=""/> </div>
+<div class="infos">
+<p class="titre">EIFFEL</p>
+<p class="date" sortdate="1650042900">
+                15/04/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">28,60 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/eiffel">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/echos-du-soleil-levant-acte-1">
+<div class="inner_line">
+<div class="affiche">
+<img alt="ECHOS DU SOLEIL LEVANT - ACTE 1" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/echos-soleil-levant-acte-1.jpg" title="ECHOS DU SOLEIL LEVANT - ACTE 1" width=""/> </div>
+<div class="infos">
+<p class="titre">ECHOS DU SOLEIL LEVANT - ACTE 1</p>
+<p class="date" sortdate="1650121200">
+                16/04/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 14,80 to 49 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/echos-du-soleil-levant-acte-1">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/echos-du-soleil-levant-acte-2">
+<div class="inner_line">
+<div class="affiche">
+<img alt="ECHOS DU SOLEIL LEVANT - ACTE 2" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/echos-soleil-levant-acte-2.jpg" title="ECHOS DU SOLEIL LEVANT - ACTE 2" width=""/> </div>
+<div class="infos">
+<p class="titre">ECHOS DU SOLEIL LEVANT - ACTE 2</p>
+<p class="date" sortdate="1650135600">
+                16/04/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 14,80 to 49 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/echos-du-soleil-levant-acte-2">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/echos-du-soleil-levant-acte-1-2">
+<div class="inner_line">
+<div class="affiche">
+<img alt="ECHOS DU SOLEIL LEVANT - ACTE 1 &amp;#38; 2" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/echos-soleil-levant-acte-1-2.jpg" title="ECHOS DU SOLEIL LEVANT - ACTE 1 &amp;#38; 2" width=""/> </div>
+<div class="infos">
+<p class="titre">ECHOS DU SOLEIL LEVANT - ACTE 1 &amp; 2</p>
+<div class="pied_de_bloc">
+<p class="prix">from 59,20 to 78,40 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/echos-du-soleil-levant-acte-1-2">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long dark_blue" data-genre="">
+<a href="/uk/programme/alice-phoebe-lou">
+<div class="inner_line">
+<div class="affiche">
+<img alt="ALICE PHOEBE LOU" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/alice-phoebe-lou-trianon.jpg" title="ALICE PHOEBE LOU" width=""/> </div>
+<div class="infos">
+<p class="titre">ALICE PHOEBE LOU</p>
+<p class="date" sortdate="1650216600">
+                17/04/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">29,60 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/alice-phoebe-lou">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/jean-louis-murat">
+<div class="inner_line">
+<div class="affiche">
+<img alt="JEAN-LOUIS MURAT" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/jean-louis-murat-trianon_1.jpg" title="JEAN-LOUIS MURAT" width=""/> </div>
+<div class="infos">
+<p class="titre">JEAN-LOUIS MURAT</p>
+<p class="date" sortdate="1650389400">
+                19/04/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 34,90 to 44,90 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/jean-louis-murat">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/grandaddy">
+<div class="inner_line">
+<div class="affiche">
+<img alt="GRANDADDY &amp;#38; THE LOST MACHINE ORCHESTRA" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/grandaddy-trianon.jpg" title="GRANDADDY &amp;#38; THE LOST MACHINE ORCHESTRA" width=""/> </div>
+<div class="infos">
+<p class="titre">GRANDADDY &amp; THE LOST MACHINE ORCHESTRA</p>
+<p class="date" sortdate="1650475800">
+                20/04/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">30,80 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/grandaddy">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long dark_blue" data-genre="">
+<a href="/uk/programme/andy-shauf">
+<div class="inner_line">
+<div class="affiche">
+<img alt="ANDY SHAUF" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/andy-shauf-trianon.jpeg" title="ANDY SHAUF" width=""/> </div>
+<div class="infos">
+<p class="titre">ANDY SHAUF</p>
+<p class="date" sortdate="1650564000">
+                21/04/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">26,40 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/andy-shauf">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_blue" data-genre="">
+<a href="/uk/programme/tricky">
+<div class="inner_line">
+<div class="product-overlay">
+<p>Annulé</p>
+</div>
+<div class="affiche">
+<img alt="TRICKY" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/tricky-trianon.jpg" title="TRICKY" width=""/> </div>
+<div class="infos">
+<p class="titre">TRICKY</p>
+<p class="date" sortdate="1650650400">
+                22/04/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">28,60 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/tricky">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long" data-genre="">
+<a href="/uk/programme/bayadere">
+<div class="inner_line">
+<div class="affiche">
+<img alt="LA BAYADERE" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/La-bayadere-trianon.jpg" title="LA BAYADERE" width=""/> </div>
+<div class="infos">
+<p class="titre">LA BAYADERE</p>
+<p class="date" sortdate="1650729600">
+                From 23/04/2022 to 24/04/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 15 to 25 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/bayadere">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long dark_blue" data-genre="">
+<a href="/uk/programme/van-der-graaf-generator">
+<div class="inner_line">
+<div class="affiche">
+<img alt="VAN DER GRAAF GENERATOR" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/van-der-graaf-generator-trianon.jpg" title="VAN DER GRAAF GENERATOR" width=""/> </div>
+<div class="infos">
+<p class="titre">VAN DER GRAAF GENERATOR</p>
+<p class="date" sortdate="1651082400">
+                27/04/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 47 to 65,50 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/van-der-graaf-generator">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/lentourloop">
+<div class="inner_line">
+<div class="affiche">
+<img alt="L'ENTOURLOOP" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/entourloop-trianon-02.jpg" title="L'ENTOURLOOP" width=""/> </div>
+<div class="infos">
+<p class="titre">L'ENTOURLOOP</p>
+<p class="date" sortdate="1651167000">
+                28/04/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 30,80 to 33 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/lentourloop">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long dark_blue" data-genre="">
+<a href="/uk/programme/peter-doherty">
+<div class="inner_line">
+<div class="product-overlay">
+<p>Complet</p>
+</div>
+<div class="affiche">
+<img alt="PETER DOHERTY &amp;#38; FREDERIC LO" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/peter-doherty-trianon_1.png" title="PETER DOHERTY &amp;#38; FREDERIC LO" width=""/> </div>
+<div class="infos">
+<p class="titre">PETER DOHERTY &amp; FREDERIC LO</p>
+<p class="date" sortdate="1651770000">
+                05/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<div class="button sold_out">SOLD OUT                          </div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_purple" data-genre="">
+<a href="/uk/programme/travis">
+<div class="inner_line">
+<div class="affiche">
+<img alt="TRAVIS" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/travis-trianon-new.jpg" title="TRAVIS" width=""/> </div>
+<div class="infos">
+<p class="titre">TRAVIS</p>
+<p class="date" sortdate="1652031000">
+                08/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 35,10 to 40,60 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/travis">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/larkin-poe">
+<div class="inner_line">
+<div class="affiche">
+<img alt="LARKIN POE" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/larkin-poe-new-trianon.jpeg" title="LARKIN POE" width=""/> </div>
+<div class="infos">
+<p class="titre">LARKIN POE</p>
+<p class="date" sortdate="1652119200">
+                09/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/larkin-poe">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/november-ultra">
+<div class="inner_line">
+<div class="affiche">
+<img alt="NOVEMBER ULTRA" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/november-ultra-trianon.png" title="NOVEMBER ULTRA" width=""/> </div>
+<div class="infos">
+<p class="titre">NOVEMBER ULTRA</p>
+<p class="date" sortdate="1652290200">
+                11/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">27,50 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/november-ultra">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/calexico">
+<div class="inner_line">
+<div class="affiche">
+<img alt="CALEXICO" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/calexico-trianon-2022.png" title="CALEXICO" width=""/> </div>
+<div class="infos">
+<p class="titre">CALEXICO</p>
+<p class="date" sortdate="1652373000">
+                12/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">31,90 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/calexico">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_pink" data-genre="">
+<a href="/uk/programme/mustapha-el-atrassi">
+<div class="inner_line">
+<div class="affiche">
+<img alt="MUSTAPHA EL ATRASSI" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/mustapha-el-atrassi-trianon_3.jpg" title="MUSTAPHA EL ATRASSI" width=""/> </div>
+<div class="infos">
+<p class="titre">MUSTAPHA EL ATRASSI</p>
+<p class="date" sortdate="1652464800">
+                From 13/05/2022 to 14/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 19 to 49 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/mustapha-el-atrassi">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long dark_blue" data-genre="">
+<a href="/uk/programme/nathaniel-rateliff">
+<div class="inner_line">
+<div class="product-overlay">
+<p>Annulé</p>
+</div>
+<div class="affiche">
+<img alt="NATHANIEL RATELIFF &amp;#38; THE NIGHT SWEATS" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/nathaniel-rateliff-trianon_1.jpg" title="NATHANIEL RATELIFF &amp;#38; THE NIGHT SWEATS" width=""/> </div>
+<div class="infos">
+<p class="titre">NATHANIEL RATELIFF &amp; THE NIGHT SWEATS</p>
+<p class="date" sortdate="1652893200">
+                18/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<div class="button canceled">ANNULER                          </div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/todrick-hall">
+<div class="inner_line">
+<div class="affiche">
+<img alt="TODRICK HALL" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/todrick-hall-trianon_1.png" title="TODRICK HALL" width=""/> </div>
+<div class="infos">
+<p class="titre">TODRICK HALL</p>
+<p class="date" sortdate="1652983200">
+                19/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 31,20 to 38,90 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/todrick-hall">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/johnny-mafia">
+<div class="inner_line">
+<div class="affiche">
+<img alt="JOHNNY MAFIA + WE HATE YOU PLEASE DIE + COSSE" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/johnny-mafia-trianon.jpg" title="JOHNNY MAFIA + WE HATE YOU PLEASE DIE + COSSE" width=""/> </div>
+<div class="infos">
+<p class="titre">JOHNNY MAFIA + WE HATE YOU PLEASE DIE + COSSE</p>
+<p class="date" sortdate="1653066000">
+                20/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">25 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/johnny-mafia">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/parquet-courts">
+<div class="inner_line">
+<div class="affiche">
+<img alt="PARQUET COURTS" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/parquet-courts-trianon.jpg" title="PARQUET COURTS" width=""/> </div>
+<div class="infos">
+<p class="titre">PARQUET COURTS</p>
+<p class="date" sortdate="1653154200">
+                21/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">29,70 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/parquet-courts">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/trixie-mattel">
+<div class="inner_line">
+<div class="affiche">
+<img alt="TRIXIE MATTEL" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/trixie-mattel-trianon3.jpg" title="TRIXIE MATTEL" width=""/> </div>
+<div class="infos">
+<p class="titre">TRIXIE MATTEL</p>
+<p class="date" sortdate="1653242400">
+                22/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 45,65 to 125,15 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/trixie-mattel">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_blue" data-genre="">
+<a href="/uk/programme/charli-xcx">
+<div class="inner_line">
+<div class="product-overlay">
+<p>Complet</p>
+</div>
+<div class="affiche">
+<img alt="CHARLI XCX" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/charli-xcx-trianon.jpg" title="CHARLI XCX" width=""/> </div>
+<div class="infos">
+<p class="titre">CHARLI XCX</p>
+<p class="date" sortdate="1653501600">
+                25/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<div class="button sold_out">SOLD OUT                          </div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_pink" data-genre="">
+<a href="/uk/programme/john-butler">
+<div class="inner_line">
+<div class="affiche">
+<img alt="JOHN BUTLER" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/john-butler-trianon2.jpg" title="JOHN BUTLER" width=""/> </div>
+<div class="infos">
+<p class="titre">JOHN BUTLER</p>
+<p class="date" sortdate="1653588000">
+                From 26/05/2022 to 27/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/john-butler">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/mpl">
+<div class="inner_line">
+<div class="affiche">
+<img alt="MPL" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/mpl-trianon.jpg" title="MPL" width=""/> </div>
+<div class="infos">
+<p class="titre">MPL</p>
+<p class="date" sortdate="1653760800">
+                28/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">34,10 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/mpl">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_orange" data-genre="">
+<a href="/uk/programme/helene-segara">
+<div class="inner_line">
+<div class="product-overlay">
+<p>Annulé</p>
+</div>
+<div class="affiche">
+<img alt="HELENE SEGARA" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/helene-segara-trianon_1.jpg" title="HELENE SEGARA" width=""/> </div>
+<div class="infos">
+<p class="titre">HELENE SEGARA</p>
+<p class="date" sortdate="1653832800">
+                29/05/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 45 to 70 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/helene-segara">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/emma-peters">
+<div class="inner_line">
+<div class="affiche">
+<img alt="EMMA PETERS" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/emma-peters.jpg" title="EMMA PETERS" width=""/> </div>
+<div class="infos">
+<p class="titre">EMMA PETERS</p>
+<p class="date" sortdate="1654277400">
+                03/06/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">29 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/emma-peters">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long dark_blue" data-genre="">
+<a href="/uk/programme/the-neal-morse-band">
+<div class="inner_line">
+<div class="affiche">
+<img alt="NMB - THE NEAL MORSE BAND" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/nmb-the-neal-morse-band-trianon.jpg" title="NMB - THE NEAL MORSE BAND" width=""/> </div>
+<div class="infos">
+<p class="titre">NMB - THE NEAL MORSE BAND</p>
+<p class="date" sortdate="1654360200">
+                04/06/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 36,05 to 44,85 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/the-neal-morse-band">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_orange" data-genre="">
+<a href="/uk/programme/andres-calamaro">
+<div class="inner_line">
+<div class="product-overlay">
+<p>Annulé</p>
+</div>
+<div class="affiche">
+<img alt="ANDRES CALAMARO" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/andres-calamaro-trianon.jpg" title="ANDRES CALAMARO" width=""/> </div>
+<div class="infos">
+<p class="titre">ANDRES CALAMARO</p>
+<p class="date" sortdate="1654882200">
+                10/06/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<div class="button canceled">ANNULER                          </div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/maximum-the-hormone">
+<div class="inner_line">
+<div class="affiche">
+<img alt="MAXIMUM THE HORMONE" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/maxime-the-hormone-trianon.png" title="MAXIMUM THE HORMONE" width=""/> </div>
+<div class="infos">
+<p class="titre">MAXIMUM THE HORMONE</p>
+<p class="date" sortdate="1654884000">
+                10/06/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">42 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/maximum-the-hormone">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_purple" data-genre="">
+<a href="/uk/programme/steve-vai">
+<div class="inner_line">
+<div class="affiche">
+<img alt="STEVE VAI" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/steve-vai-trianon.jpg" title="STEVE VAI" width=""/> </div>
+<div class="infos">
+<p class="titre">STEVE VAI</p>
+<p class="date" sortdate="1655143200">
+                13/06/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">44 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/steve-vai">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/oldelaf-2022">
+<div class="inner_line">
+<div class="affiche">
+<img alt="OLDELAF" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/OLDELAF-Trianon_visu-Trianon.jpg" title="OLDELAF" width=""/> </div>
+<div class="infos">
+<p class="titre">OLDELAF</p>
+<p class="date" sortdate="1655227800">
+                14/06/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 33 to 39 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/oldelaf-2022">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_purple" data-genre="">
+<a href="/uk/programme/seb-mellia">
+<div class="inner_line">
+<div class="affiche">
+<img alt="SEB MELLIA" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/seb-mellia-trianon.jpg" title="SEB MELLIA" width=""/> </div>
+<div class="infos">
+<p class="titre">SEB MELLIA</p>
+<p class="date" sortdate="1655577000">
+                From 18/06/2022 to 19/06/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 25 to 39 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/seb-mellia">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/peaches">
+<div class="inner_line">
+<div class="affiche">
+<img alt="PEACHES" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/peaches-trianon.jpg" title="PEACHES" width=""/> </div>
+<div class="infos">
+<p class="titre">PEACHES</p>
+<p class="date" sortdate="1655746200">
+                20/06/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">29,70 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/peaches">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/dudu-tassa-the-kuwaitis">
+<div class="inner_line">
+<div class="affiche">
+<img alt="DUDU TASSA &amp;#38; THE KUWAITIS" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/dudu-tassa-kuwaitis-trianon.jpg" title="DUDU TASSA &amp;#38; THE KUWAITIS" width=""/> </div>
+<div class="infos">
+<p class="titre">DUDU TASSA &amp; THE KUWAITIS</p>
+<p class="date" sortdate="1656352800">
+                27/06/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 19 to 90 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/dudu-tassa-the-kuwaitis">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_purple" data-genre="">
+<a href="/uk/programme/alec-benjamin">
+<div class="inner_line">
+<div class="affiche">
+<img alt="ALEC BENJAMIN" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/alec-benjamin-trianon.jpg" title="ALEC BENJAMIN" width=""/> </div>
+<div class="infos">
+<p class="titre">ALEC BENJAMIN</p>
+<p class="date" sortdate="1656439200">
+                28/06/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/alec-benjamin">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/osees">
+<div class="inner_line">
+<div class="affiche">
+<img alt="OSEES" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/OSEES%20-%20351%20x%20351%20PX.jpg" title="OSEES" width=""/> </div>
+<div class="infos">
+<p class="titre">OSEES</p>
+<p class="date" sortdate="1656523800">
+                29/06/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">27,50 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/osees">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/aurora">
+<div class="inner_line">
+<div class="affiche">
+<img alt="AURORA" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/AURORA-trianon-2.jpg" title="AURORA" width=""/> </div>
+<div class="infos">
+<p class="titre">AURORA</p>
+<p class="date" sortdate="1661796000">
+                29/08/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 30,80 to 35,20 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/aurora">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long dark_blue" data-genre="">
+<a href="/uk/programme/passenger">
+<div class="inner_line">
+<div class="affiche">
+<img alt="PASSENGER" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/passenger-trianon.png" title="PASSENGER" width=""/> </div>
+<div class="infos">
+<p class="titre">PASSENGER</p>
+<p class="date" sortdate="1662141600">
+                02/09/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 36,20 to 45 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/passenger">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/s-c-a-r-r">
+<div class="inner_line">
+<div class="affiche">
+<img alt="S+C+A+R+R" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/scarr-trianon.jpg" title="S+C+A+R+R" width=""/> </div>
+<div class="infos">
+<p class="titre">S+C+A+R+R</p>
+<p class="date" sortdate="1662744600">
+                09/09/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 29,90 to 36,90 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/s-c-a-r-r">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/sara-h">
+<div class="inner_line">
+<div class="affiche">
+<img alt="SARA'H" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/sarah-new-trianon.jpg" title="SARA'H" width=""/> </div>
+<div class="infos">
+<p class="titre">SARA'H</p>
+<p class="date" sortdate="1663351200">
+                16/09/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 35 to 50 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/sara-h">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_purple" data-genre="">
+<a href="/uk/programme/tom-odell">
+<div class="inner_line">
+<div class="affiche">
+<img alt="TOM ODELL" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/tom_odell_trianon_1_1.png" title="TOM ODELL" width=""/> </div>
+<div class="infos">
+<p class="titre">TOM ODELL</p>
+<p class="date" sortdate="1663524000">
+                18/09/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">38,50 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/tom-odell">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/xavier-rudd">
+<div class="inner_line">
+<div class="affiche">
+<img alt="XAVIER RUDD" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/xavier-rudd-trianon.png" title="XAVIER RUDD" width=""/> </div>
+<div class="infos">
+<p class="titre">XAVIER RUDD</p>
+<p class="date" sortdate="1663608600">
+                19/09/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">35,65 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/xavier-rudd">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/kurt-vile">
+<div class="inner_line">
+<div class="affiche">
+<img alt="KURT VILE &amp;#38; THE VIOLATORS" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/kurt-vile-trianon.jpg" title="KURT VILE &amp;#38; THE VIOLATORS" width=""/> </div>
+<div class="infos">
+<p class="titre">KURT VILE &amp; THE VIOLATORS</p>
+<p class="date" sortdate="1663695000">
+                20/09/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">29,70 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/kurt-vile">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/james-morrison-2022">
+<div class="inner_line">
+<div class="affiche">
+<img alt="JAMES MORRISON" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/James_Morrison_Trianon.jpg" title="JAMES MORRISON" width=""/> </div>
+<div class="infos">
+<p class="titre">JAMES MORRISON</p>
+<p class="date" sortdate="1663781400">
+                21/09/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">35,10 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/james-morrison-2022">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long dark_blue" data-genre="">
+<a href="/uk/programme/no-one-is-innocent">
+<div class="inner_line">
+<div class="affiche">
+<img alt="NO ONE IS INNOCENT" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/no-one-is-innocent-trianon.jpg" title="NO ONE IS INNOCENT" width=""/> </div>
+<div class="infos">
+<p class="titre">NO ONE IS INNOCENT</p>
+<p class="date" sortdate="1663867800">
+                22/09/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">26,40 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/no-one-is-innocent">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/calum-scott">
+<div class="inner_line">
+<div class="affiche">
+<img alt="CALUM SCOTT" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/calum-scott-trianon-3.jpg" title="CALUM SCOTT" width=""/> </div>
+<div class="infos">
+<p class="titre">CALUM SCOTT</p>
+<p class="date" sortdate="1663956000">
+                23/09/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 17,80 to 37,30 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/calum-scott">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_pink" data-genre="">
+<a href="/uk/programme/thomas-vdb">
+<div class="inner_line">
+<div class="affiche">
+<img alt="THOMAS VDB S'ACCLIMATE" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/thomas-vdb-acclimate-trianon.jpg" title="THOMAS VDB S'ACCLIMATE" width=""/> </div>
+<div class="infos">
+<p class="titre">THOMAS VDB S'ACCLIMATE</p>
+<p class="date" sortdate="1664042400">
+                From 24/09/2022 to 30/09/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 26 to 39 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/thomas-vdb">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_blue" data-genre="">
+<a href="/uk/programme/infected-mushroom">
+<div class="inner_line">
+<div class="product-overlay en-vente">
+<p>On sale the               <br/><br/>
+<span class="time">
+                  15 April 2022 à 13h.              </span>
+</p>
+</div>
+<div class="affiche">
+<img alt="INFECTED MUSHROOM" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/infected-mushroom-trianon.jpg" title="INFECTED MUSHROOM" width=""/> </div>
+<div class="infos">
+<p class="titre">INFECTED MUSHROOM</p>
+<p class="date" sortdate="1664128800">
+                25/09/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<div class="button soon_available">in_sell_date               Monday, January 1, 2001 à 12:00 AM            </div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/skald">
+<div class="inner_line">
+<div class="affiche">
+<img alt="SK&amp;#193;LD" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/skald-trianon.jpg" title="SK&amp;#193;LD" width=""/> </div>
+<div class="infos">
+<p class="titre">SKÁLD</p>
+<p class="date" sortdate="1664643600">
+                01/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">35,20 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/skald">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/saxon">
+<div class="inner_line">
+<div class="affiche">
+<img alt="SAXON" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/saxon-trianon.jpg" title="SAXON" width=""/> </div>
+<div class="infos">
+<p class="titre">SAXON</p>
+<p class="date" sortdate="1664730000">
+                02/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 41 to 63 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/saxon">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/keren-ann-quatuor-debussy">
+<div class="inner_line">
+<div class="affiche">
+<img alt="KEREN ANN &amp;#38; QUATUOR DEBUSSY" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/keren-ann-trianon.jpg" title="KEREN ANN &amp;#38; QUATUOR DEBUSSY" width=""/> </div>
+<div class="infos">
+<p class="titre">KEREN ANN &amp; QUATUOR DEBUSSY</p>
+<p class="date" sortdate="1664818200">
+                03/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 29 to 49 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/keren-ann-quatuor-debussy">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/black-stone-cherry">
+<div class="inner_line">
+<div class="affiche">
+<img alt="BLACK STONE CHERRY" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/black-stone-cherry-trianon.jpg" title="BLACK STONE CHERRY" width=""/> </div>
+<div class="infos">
+<p class="titre">BLACK STONE CHERRY</p>
+<p class="date" sortdate="1664992800">
+                05/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/black-stone-cherry">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/einsturzende-neubauten">
+<div class="inner_line">
+<div class="affiche">
+<img alt="EINSTURZENDE NEUBAUTEN" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/EINSTURZENDE-neubauten-trianon.jpg" title="EINSTURZENDE NEUBAUTEN" width=""/> </div>
+<div class="infos">
+<p class="titre">EINSTURZENDE NEUBAUTEN</p>
+<p class="date" sortdate="1665250200">
+                08/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 47 to 64,50 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/einsturzende-neubauten">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/ajr">
+<div class="inner_line">
+<div class="affiche">
+<img alt="AJR" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/AJR-trianon.jpg" title="AJR" width=""/> </div>
+<div class="infos">
+<p class="titre">AJR</p>
+<p class="date" sortdate="1665338400">
+                09/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/ajr">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/andy-summers">
+<div class="inner_line">
+<div class="affiche">
+<img alt="ANDY SUMMERS" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/andy-summers-trianon.jpg" title="ANDY SUMMERS" width=""/> </div>
+<div class="infos">
+<p class="titre">ANDY SUMMERS</p>
+<p class="date" sortdate="1665424800">
+                10/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 34 to 50,50 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/andy-summers">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long dark_blue" data-genre="">
+<a href="/uk/programme/dean-lewis">
+<div class="inner_line">
+<div class="affiche">
+<img alt="DEAN LEWIS" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/dean-lewis-trianon.jpg" title="DEAN LEWIS" width=""/> </div>
+<div class="infos">
+<p class="titre">DEAN LEWIS</p>
+<p class="date" sortdate="1665856800">
+                15/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/dean-lewis">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/lil-tecca">
+<div class="inner_line">
+<div class="affiche">
+<img alt="LIL TECCA" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/lil-tecca-trianon-octobre.jpg" title="LIL TECCA" width=""/> </div>
+<div class="infos">
+<p class="titre">LIL TECCA</p>
+<p class="date" sortdate="1666029600">
+                17/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/lil-tecca">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_purple" data-genre="">
+<a href="/uk/programme/hannah-gadsby">
+<div class="inner_line">
+<div class="affiche">
+<img alt="HANNAH GADSBY" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/hannah-gadsby-trianon.jpg" title="HANNAH GADSBY" width=""/> </div>
+<div class="infos">
+<p class="titre">HANNAH GADSBY</p>
+<p class="date" sortdate="1666202400">
+                From 19/10/2022 to 20/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 31,65 to 44,85 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/hannah-gadsby">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/youssoupha">
+<div class="inner_line">
+<div class="affiche">
+<img alt="YOUSSOUPHA" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/youssoupha-trianon-2022.png" title="YOUSSOUPHA" width=""/> </div>
+<div class="infos">
+<p class="titre">YOUSSOUPHA</p>
+<p class="date" sortdate="1666634400">
+                24/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">39 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/youssoupha">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/chris-thile">
+<div class="inner_line">
+<div class="affiche">
+<img alt="CHRIS THILE" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/chris-thile-trianon.png" title="CHRIS THILE" width=""/> </div>
+<div class="infos">
+<p class="titre">CHRIS THILE</p>
+<p class="date" sortdate="1666891800">
+                27/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 32 to 39,50 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/chris-thile">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/frog-leap">
+<div class="inner_line">
+<div class="affiche">
+<img alt="FROG LEAP" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/frog-leap-trianon.jpg" title="FROG LEAP" width=""/> </div>
+<div class="infos">
+<p class="titre">FROG LEAP</p>
+<p class="date" sortdate="1666978200">
+                28/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">28,50 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/frog-leap">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_purple" data-genre="">
+<a href="/uk/programme/blue-oyster-cult">
+<div class="inner_line">
+<div class="affiche">
+<img alt="BLUE OYSTER CULT" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/blue-oyster-cult-trianon.png" title="BLUE OYSTER CULT" width=""/> </div>
+<div class="infos">
+<p class="titre">BLUE OYSTER CULT</p>
+<p class="date" sortdate="1667154600">
+                From 30/10/2022 to 31/10/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 59,80 to 79,60 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/blue-oyster-cult">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/wolf-alice">
+<div class="inner_line">
+<div class="affiche">
+<img alt="WOLF ALICE" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/wolf-alice-trianon.jpg" title="WOLF ALICE" width=""/> </div>
+<div class="infos">
+<p class="titre">WOLF ALICE</p>
+<p class="date" sortdate="1667674800">
+                05/11/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/wolf-alice">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_orange" data-genre="">
+<a href="/uk/programme/yung-lean">
+<div class="inner_line">
+<div class="product-overlay en-vente">
+<p>On sale the               <br/><br/>
+<span class="time">
+                  13 April 2022 à 10h.              </span>
+</p>
+</div>
+<div class="affiche">
+<img alt="YUNG LEAN" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/yung-lean-trianon.png" title="YUNG LEAN" width=""/> </div>
+<div class="infos">
+<p class="titre">YUNG LEAN</p>
+<p class="date" sortdate="1668193200">
+                11/11/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<div class="button soon_available">in_sell_date               Monday, January 1, 2001 à 12:00 AM            </div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_orange" data-genre="">
+<a href="/uk/programme/tedeschi-trucks-band">
+<div class="inner_line">
+<div class="affiche">
+<img alt="TEDESCHI TRUCKS BAND" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/tedeschi-trucks-band-trianon.jpg" title="TEDESCHI TRUCKS BAND" width=""/> </div>
+<div class="infos">
+<p class="titre">TEDESCHI TRUCKS BAND</p>
+<p class="date" sortdate="1668276000">
+                From 12/11/2022 to 13/11/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 46,50 to 96 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/tedeschi-trucks-band">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programme/the-script">
+<div class="inner_line">
+<div class="affiche">
+<img alt="THE SCRIPT" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/script.jpg" title="THE SCRIPT" width=""/> </div>
+<div class="infos">
+<p class="titre">THE SCRIPT</p>
+<p class="date" sortdate="1668452400">
+                14/11/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/the-script">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/axel-bauer">
+<div class="inner_line">
+<div class="affiche">
+<img alt="AXEL BAUER" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/axel-bauer-trianon-2.jpg" title="AXEL BAUER" width=""/> </div>
+<div class="infos">
+<p class="titre">AXEL BAUER</p>
+<p class="date" sortdate="1668538800">
+                15/11/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 35 to 49 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/axel-bauer">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long dark_blue" data-genre="">
+<a href="/uk/programme/negramaro">
+<div class="inner_line">
+<div class="affiche">
+<img alt="NEGRAMARO" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/negramaro-trianon.jpg" title="NEGRAMARO" width=""/> </div>
+<div class="infos">
+<p class="titre">NEGRAMARO</p>
+<p class="date" sortdate="1669489200">
+                26/11/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/negramaro">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_purple" data-genre="">
+<a href="/uk/programme/superpoze">
+<div class="inner_line">
+<div class="affiche">
+<img alt="SUPERPOZE" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/superpoze-trianon.png" title="SUPERPOZE" width=""/> </div>
+<div class="infos">
+<p class="titre">SUPERPOZE</p>
+<p class="date" sortdate="1669748400">
+                29/11/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 28 to 31 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/superpoze">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/arthur-h-2022">
+<div class="inner_line">
+<div class="affiche">
+<img alt="ARTHUR H" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/arthur-h-trianon-2022.png" title="ARTHUR H" width=""/> </div>
+<div class="infos">
+<p class="titre">ARTHUR H</p>
+<p class="date" sortdate="1670007600">
+                02/12/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 35 to 43 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/arthur-h-2022">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long dark_blue" data-genre="">
+<a href="/uk/programme/badbadnotgood">
+<div class="inner_line">
+<div class="affiche">
+<img alt="BADBADNOTGOOD" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/badbadnotgood.jpg" title="BADBADNOTGOOD" width=""/> </div>
+<div class="infos">
+<p class="titre">BADBADNOTGOOD</p>
+<p class="date" sortdate="1670437800">
+                07/12/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">33 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/badbadnotgood">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/earthgang">
+<div class="inner_line">
+<div class="affiche">
+<img alt="EARTHGANG" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/earthgang-trianon.jpg" title="EARTHGANG" width=""/> </div>
+<div class="infos">
+<p class="titre">EARTHGANG</p>
+<p class="date" sortdate="1670871600">
+                12/12/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix"></p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/earthgang">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long dark_blue" data-genre="">
+<a href="/uk/programme/hopen">
+<div class="inner_line">
+<div class="affiche">
+<img alt="HOPEN" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/hopen-trianon.jpg" title="HOPEN" width=""/> </div>
+<div class="infos">
+<p class="titre">HOPEN</p>
+<p class="date" sortdate="1671382800">
+                18/12/2022     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 35 to 55 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/hopen">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long light_pink" data-genre="">
+<a href="/uk/programme/slava-s-snowshow">
+<div class="inner_line">
+<div class="affiche">
+<img alt="SLAVA'S SNOWSHOW" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/slava-s-snowshow-trianon_1.jpg" title="SLAVA'S SNOWSHOW" width=""/> </div>
+<div class="infos">
+<p class="titre">SLAVA'S SNOWSHOW</p>
+<p class="date" sortdate="1671649200">
+                From 21/12/2022 to 08/01/2023     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 33 to 75 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/slava-s-snowshow">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/fanny-ruwet">
+<div class="inner_line">
+<div class="affiche">
+<img alt="FANNY RUWET" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/fanny-ruwet-trianon.jpg" title="FANNY RUWET" width=""/> </div>
+<div class="infos">
+<p class="titre">FANNY RUWET</p>
+<p class="date" sortdate="1674846000">
+                27/01/2023     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 19 to 35 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/fanny-ruwet">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_blue" data-genre="">
+<a href="/uk/programmation/laura-cahen">
+<div class="inner_line">
+<div class="affiche">
+<img alt="LAURA CAHEN" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/Laura-cahen-trianon.jpg" title="LAURA CAHEN" width=""/> </div>
+<div class="infos">
+<p class="titre">LAURA CAHEN</p>
+<p class="date" sortdate="1675965600">
+                09/02/2023     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 29 to 34 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programmation/laura-cahen">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_purple" data-genre="">
+<a href="/uk/programme/katatonia-solstafir">
+<div class="inner_line">
+<div class="affiche">
+<img alt="KATATONIA &amp;#38; SOLSTAFIR " height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/katatonia-solstafir_trianon.jpg" title="KATATONIA &amp;#38; SOLSTAFIR " width=""/> </div>
+<div class="infos">
+<p class="titre">KATATONIA &amp; SOLSTAFIR </p>
+<p class="date" sortdate="1676826000">
+                19/02/2023     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">37,40 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/katatonia-solstafir">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line unavailable long dark_blue" data-genre="">
+<a href="/uk/programme/arnaud-tsamere">
+<div class="inner_line">
+<div class="affiche">
+<img alt="ARNAUD TSAMERE" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/arnaud-tsamere-trianon.jpg" title="ARNAUD TSAMERE" width=""/> </div>
+<div class="infos">
+<p class="titre">ARNAUD TSAMERE</p>
+<p class="date" sortdate="1678474800">
+                From 10/03/2023 to 11/03/2023     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 30 to 45 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/arnaud-tsamere">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_pink" data-genre="">
+<a href="/uk/programme/aldous-harding">
+<div class="inner_line">
+<div class="affiche">
+<img alt="ALDOUS HARDING" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/Aldous-harding-trianon.jpg" title="ALDOUS HARDING" width=""/> </div>
+<div class="infos">
+<p class="titre">ALDOUS HARDING</p>
+<p class="date" sortdate="1680026400">
+                28/03/2023     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 29,70 to 35,20 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/aldous-harding">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long light_orange" data-genre="">
+<a href="/uk/programme/birdy">
+<div class="inner_line">
+<div class="affiche">
+<img alt="BIRDY" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/birdy-trianon.png" title="BIRDY" width=""/> </div>
+<div class="infos">
+<p class="titre">BIRDY</p>
+<p class="date" sortdate="1681495200">
+                14/04/2023     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">41,80 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/birdy">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+<div class="line long dark_blue" data-genre="">
+<a href="/uk/programme/les-comedies-musicales-grand-show">
+<div class="inner_line">
+<div class="affiche">
+<img alt="LES COMEDIES MUSICALES" height="" src="https://www.letrianon.fr/sites/trianon7.ap2s.fr/files/styles/product_billetterie/public/les-comedies-musicales-trianon-2023.jpg" title="LES COMEDIES MUSICALES" width=""/> </div>
+<div class="infos">
+<p class="titre">LES COMEDIES MUSICALES</p>
+<p class="date" sortdate="1682186400">
+                22/04/2023     
+              </p>
+<div class="pied_de_bloc">
+<p class="prix">from 29 to 45 €</p>
+<div class="over" style="display:none;"></div>
+<a href="/uk/programme/les-comedies-musicales-grand-show">
+<div class="button sold">RESERVER                          </div>
+</a> </div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> <!-- fin  contenu -->
+</div> <!-- fin container -->
+</div> <!-- fin global wrapper -->
+</div><!-- FIN wrapper_all_page -->
+<a class="mentions-legales" href="/mentions-legales">Mentions légales</a>
+<a class="sitemap" href="/plan-du-site">Plan du site</a>
+<div id="footer">
+<div class="footer_center">
+<div class="menu_footer">
+</div>
+</div>
+</div>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5PLLKJP');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5PLLKJP" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var lang = 'uk';
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var user = 0;
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+language_active = false;
+//--><!]]>
+</script>
+</div>
+</body>
+</html>
