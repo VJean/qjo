@@ -11,9 +11,8 @@ if not os.path.isdir(folder_path):
 
 for venue in venues:
     venue_name = venue.__name__.lower()
-    file_path = f"./tests/agendas/{venue_name}.html"
+    file_path = os.path.join(folder_path, f"{venue_name}.html")
 
-    # TODO check mtime different than today?
     with open(file_path, "w") as f:
         print(f"Downloading {venue_name}'s agenda at {file_path}")
         f.write(str(venue._get_agenda_html()))
