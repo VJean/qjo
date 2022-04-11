@@ -37,9 +37,13 @@ def get_followed_artists():
 
 
 with Pool() as pool:
+    print("Gathering concerts...")
     async_results = [pool.apply_async(venue.get_events, ()) for venue in venues]
     events = []
     for result in async_results:
         events.extend(result.get())
+    print("Found %d events" % len(events))
+    print("Sorting by date...")
     events.sort()
     print(events)
+    # print("Filtering with followed artists...")
