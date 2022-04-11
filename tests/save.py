@@ -4,6 +4,8 @@ from qjo.venues import venues
 
 folder_path = "./tests/agendas/"
 
+# TODO add flags to update only one venue or a set of venues or all venues
+
 # test folder existence
 if not os.path.isdir(folder_path):
     print("Missing test files folder, please run 'make test'")

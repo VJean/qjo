@@ -10,6 +10,7 @@ def get_followed_artists():
     # not load any followed artist
     # load from file
     # load from spotify
+    # load from deezer
     import spotipy
     from spotipy.oauth2 import SpotifyOAuth
 
