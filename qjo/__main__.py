@@ -41,4 +41,5 @@ with Pool() as pool:
     events = []
     for result in async_results:
         events.extend(result.get())
+    events.sort()
     print(events)

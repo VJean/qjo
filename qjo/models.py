@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from datetime import date, datetime
 from typing import Sequence, List
 from bs4 import BeautifulSoup
 import urllib3, bs4
@@ -31,6 +32,66 @@ class Concert:
         if self.infos is not None:
             rep_str += f" ({self.infos})"
         return rep_str
+
+    def __lt__(self, other):
+        if type(self.date) == type(other.date):
+            return self.date < other.date
+        elif type(self.date) is date:
+            return datetime(self.date.year, self.date.month, self.date.day) < other.date
+        else:
+            return self.date < datetime(
+                other.date.year, other.date.month, other.date.day
+            )
+
+    def __le__(self, other):
+        if type(self.date) == type(other.date):
+            return self.date <= other.date
+        elif type(self.date) is date:
+            return (
+                datetime(self.date.year, self.date.month, self.date.day) <= other.date
+            )
+        else:
+            return self.date <= datetime(
+                other.date.year, other.date.month, other.date.day
+            )
+
+    def __eq__(self, other):
+        return (
+            self.artist == other.artist
+            or self.date == other.date
+            and self.infos == other.infos
+            and self.venue == other.venue
+        )
+
+    def __ne__(self, other):
+        return (
+            self.artist != other.artist
+            or self.date != other.date
+            or self.infos != other.infos
+            or self.venue != other.venue
+        )
+
+    def __gt__(self, other):
+        if type(self.date) == type(other.date):
+            return self.date > other.date
+        elif type(self.date) is date:
+            return datetime(self.date.year, self.date.month, self.date.day) > other.date
+        else:
+            return self.date > datetime(
+                other.date.year, other.date.month, other.date.day
+            )
+
+    def __ge__(self, other):
+        if type(self.date) == type(other.date):
+            return self.date >= other.date
+        elif type(self.date) is date:
+            return (
+                datetime(self.date.year, self.date.month, self.date.day) >= other.date
+            )
+        else:
+            return self.date >= datetime(
+                other.date.year, other.date.month, other.date.day
+            )
 
 
 class Venue:
