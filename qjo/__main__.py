@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import config
+from qjo import filter_events, display_events
 from qjo.venues import venues
 from multiprocessing import Pool
 
@@ -45,5 +46,6 @@ with Pool() as pool:
     print("Found %d events" % len(events))
     print("Sorting by date...")
     events.sort()
-    print(events)
-    # print("Filtering with followed artists...")
+    print("Filtering with followed artists...")
+    events = filter_events(events, get_followed_artists())
+    display_events(events)

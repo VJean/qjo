@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 
 from qjo.models import Concert, Venue
 from qjo.venues import Maroquinerie, Trianon, CabaretSauvage
+from qjo import filter_events
 
 
 def load_local_html(v: Venue) -> BeautifulSoup:
@@ -77,6 +78,25 @@ class TestConcert(unittest.TestCase):
         events = [c1, c4, c3, c2]
         events.sort()
         self.assertListEqual(events, [c1, c2, c3, c4])
+
+
+class TestFilter(unittest.TestCase):
+    def test_filter(self):
+        c1 = Concert("Artist One", date(2022, 4, 11), Maroquinerie)
+        c2 = Concert("Second Artist", date(2022, 4, 11), Maroquinerie)
+        c3 = Concert("SUPERBAND", datetime(2022, 4, 11, 19, 30), Trianon)
+        c4 = Concert("local band", datetime(2022, 6, 25, 20), CabaretSauvage)
+        c5 = Concert(
+            "Artist One + local band",
+            date(2022, 6, 26),
+            Trianon,
+            infos="Artist One with local band as opener",
+        )
+        events = [c1, c2, c3, c4, c5]
+        self.assertListEqual(
+            filter_events(events, ["local band", "Second Artist", "obscure band"]),
+            [c2, c4, c5],
+        )
 
 
 if __name__ == "__main__":
