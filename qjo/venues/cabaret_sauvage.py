@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from .. import models
+from . import parse_date
 import dateparser
 
 
@@ -23,15 +24,9 @@ class CabaretSauvage(models.Venue):
                 details = item.select("div.work-details")[0]
                 date = details.select("div.post-date")[0].text
                 title = details.select("a.work-title")[0].text
-                parsed_date = dateparser.parse(
+                parsed_date = parse_date(
                     date,
                     date_formats=["%d.%m.%y", "%d.%m.%Y"],
-                    languages=["fr"],
-                    settings={
-                        "TIMEZONE": "Europe/Paris",
-                        "RETURN_AS_TIMEZONE_AWARE": True,
-                        "PREFER_DATES_FROM": "future",
-                    },
                 )
                 concerts.append(models.Concert(title, parsed_date, cls))
 

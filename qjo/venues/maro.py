@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 from .. import models
+from . import parse_date
 import datetime as dt
-import dateparser
 
 
 class Maroquinerie(models.Venue):
@@ -40,14 +40,8 @@ class Maroquinerie(models.Venue):
             if date != "":
                 # dates are expected to be written as "14 Janvier" or range "14 Janvier - 17 Janvier"
                 for d in map(lambda x: x.strip(), date.split("-")):
-                    event_date = dateparser.parse(
+                    event_date = parse_date(
                         f"{d} {time}",
-                        languages=["fr"],
-                        settings={
-                            "TIMEZONE": "Europe/Paris",
-                            "RETURN_AS_TIMEZONE_AWARE": True,
-                            "PREFER_DATES_FROM": "future",
-                        },
                     )
                     if event_date is None:
                         print("Could not parse date: ", d)
@@ -55,9 +49,6 @@ class Maroquinerie(models.Venue):
                     # which year ? all events are either today or in the future
                     if event_date.day == today_day and event_date.month == today_month:
                         event_date = event_date.replace(year=today_year)
-
-                    if time == "":
-                        event_date = event_date.date()
 
                     dates.append(event_date)
 

@@ -5,7 +5,7 @@ from datetime import date, datetime
 from bs4 import BeautifulSoup
 
 from qjo.models import Concert, Venue
-from qjo.venues import Maroquinerie, Trianon, CabaretSauvage
+from qjo.venues import Maroquinerie, Trianon, CabaretSauvage, parse_date
 from qjo import filter_events
 
 
@@ -54,15 +54,17 @@ class TestVenues(unittest.TestCase):
 
 class TestConcert(unittest.TestCase):
     def test_comparison(self):
-        c1 = Concert("A", date(2022, 4, 11), Maroquinerie, infos="Canceled")
-        c2 = Concert("A", datetime(2022, 4, 11, 19, 30), Maroquinerie, infos="Canceled")
+        c1 = Concert("A", parse_date("11/04/2022"), Maroquinerie, infos="Canceled")
+        c2 = Concert(
+            "A", parse_date("11/04/2022 19:30"), Maroquinerie, infos="Canceled"
+        )
         self.assertNotEqual(c1, c2)
         self.assertLess(c1, c2)
         self.assertLessEqual(c1, c2)
         self.assertGreater(c2, c1)
         self.assertGreaterEqual(c2, c1)
 
-        c3 = Concert("A", date(2022, 4, 11), Maroquinerie, infos="Canceled")
+        c3 = Concert("A", parse_date("11/04/2022"), Maroquinerie, infos="Canceled")
         self.assertEqual(c1, c3)
         self.assertLessEqual(c1, c3)
         self.assertGreaterEqual(c2, c3)
@@ -71,10 +73,10 @@ class TestConcert(unittest.TestCase):
         self.assertNotEqual(c1, c3)
 
     def test_sort(self):
-        c1 = Concert("A", date(2022, 4, 11), Maroquinerie, infos="Canceled")
-        c2 = Concert("B", date(2022, 4, 11), Maroquinerie)
-        c3 = Concert("A", datetime(2022, 4, 11, 19, 30), Trianon)
-        c4 = Concert("B", datetime(2022, 6, 25, 20), CabaretSauvage)
+        c1 = Concert("A", parse_date("11/04/2022"), Maroquinerie, infos="Canceled")
+        c2 = Concert("B", parse_date("11/04/2022"), Maroquinerie)
+        c3 = Concert("A", parse_date("11/04/2022 19:30"), Trianon)
+        c4 = Concert("B", parse_date("25/06/2022 20:00"), CabaretSauvage)
         events = [c1, c4, c3, c2]
         events.sort()
         self.assertListEqual(events, [c1, c2, c3, c4])
@@ -82,10 +84,10 @@ class TestConcert(unittest.TestCase):
 
 class TestFilter(unittest.TestCase):
     def test_filter(self):
-        c1 = Concert("Artist One", date(2022, 4, 11), Maroquinerie)
-        c2 = Concert("Second Artist", date(2022, 4, 11), Maroquinerie)
-        c3 = Concert("SUPERBAND", datetime(2022, 4, 11, 19, 30), Trianon)
-        c4 = Concert("local band", datetime(2022, 6, 25, 20), CabaretSauvage)
+        c1 = Concert("Artist One", parse_date("11/04/2022"), Maroquinerie)
+        c2 = Concert("Second Artist", parse_date("11/04/2022"), Maroquinerie)
+        c3 = Concert("SUPERBAND", parse_date("11/04/2022 19:30"), Trianon)
+        c4 = Concert("local band", parse_date("25/06/2022 20:00"), CabaretSauvage)
         c5 = Concert(
             "Artist One + local band",
             date(2022, 6, 26),

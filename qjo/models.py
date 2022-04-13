@@ -18,10 +18,7 @@ class Address:
 
 
 class Concert:
-    def __init__(self, artist, date, venue, infos=None):
-        """
-        'date' should hold following types: date or datetime
-        """
+    def __init__(self, artist, date: datetime, venue, infos=None):
         self.artist = artist
         self.date = date
         self.infos = infos
@@ -34,31 +31,15 @@ class Concert:
         return rep_str
 
     def __lt__(self, other):
-        if type(self.date) == type(other.date):
-            return self.date < other.date
-        elif type(self.date) is date:
-            return datetime(self.date.year, self.date.month, self.date.day) < other.date
-        else:
-            return self.date < datetime(
-                other.date.year, other.date.month, other.date.day
-            )
+        return self.date < other.date
 
     def __le__(self, other):
-        if type(self.date) == type(other.date):
-            return self.date <= other.date
-        elif type(self.date) is date:
-            return (
-                datetime(self.date.year, self.date.month, self.date.day) <= other.date
-            )
-        else:
-            return self.date <= datetime(
-                other.date.year, other.date.month, other.date.day
-            )
+        return self.date <= other.date
 
     def __eq__(self, other):
         return (
             self.artist == other.artist
-            or self.date == other.date
+            and self.date == other.date
             and self.infos == other.infos
             and self.venue == other.venue
         )
@@ -72,26 +53,10 @@ class Concert:
         )
 
     def __gt__(self, other):
-        if type(self.date) == type(other.date):
-            return self.date > other.date
-        elif type(self.date) is date:
-            return datetime(self.date.year, self.date.month, self.date.day) > other.date
-        else:
-            return self.date > datetime(
-                other.date.year, other.date.month, other.date.day
-            )
+        return self.date > other.date
 
     def __ge__(self, other):
-        if type(self.date) == type(other.date):
-            return self.date >= other.date
-        elif type(self.date) is date:
-            return (
-                datetime(self.date.year, self.date.month, self.date.day) >= other.date
-            )
-        else:
-            return self.date >= datetime(
-                other.date.year, other.date.month, other.date.day
-            )
+        return self.date >= other.date
 
 
 class Venue:

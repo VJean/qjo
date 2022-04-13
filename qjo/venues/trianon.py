@@ -1,20 +1,8 @@
 #!/usr/bin/env python3
 
 from .. import models
+from . import parse_date
 from datetime import datetime, timedelta
-import dateparser
-
-
-def parse_date(date: str) -> datetime:
-    return dateparser.parse(
-        date,
-        languages=["fr"],
-        settings={
-            "TIMEZONE": "Europe/Paris",
-            "RETURN_AS_TIMEZONE_AWARE": True,
-            "PREFER_DATES_FROM": "future",
-        },
-    )
 
 
 class Trianon(models.Venue):
