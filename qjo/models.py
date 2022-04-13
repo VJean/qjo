@@ -72,7 +72,9 @@ class Venue:
     @classmethod
     def get_events(cls):
         soup = cls._get_agenda_html()
-        return cls._soup_to_concerts(soup)
+        concerts = cls._soup_to_concerts(soup)
+        print(cls.get_name(), len(concerts), "events from", concerts[0].date, "to", concerts[-1].date)
+        return concerts
 
     @classmethod
     def _soup_to_concerts(
