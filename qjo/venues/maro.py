@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
+import logging
 from .. import models
 from . import parse_date
 import datetime as dt
 
+logger = logging.getLogger(__name__)
 
 class Maroquinerie(models.Venue):
     name = "La Maroquinerie"
@@ -44,7 +46,7 @@ class Maroquinerie(models.Venue):
                         f"{d} {time}",
                     )
                     if event_date is None:
-                        print("Could not parse date: ", d)
+                        logger.warning(f"Could not parse date '{d}' for title '{title}'")
                         continue
                     # which year ? all events are either today or in the future
                     if event_date.day == today_day and event_date.month == today_month:
@@ -63,6 +65,6 @@ class Maroquinerie(models.Venue):
                         first = first + dt.timedelta(days=1)
                         concerts.append(models.Concert(title, first, cls, details))
                 else:
-                    print("Got a strange date format : ", date)
+                    logger.warning(f"Unknown date format '{d}' for title '{title}'")
                     continue
         return concerts

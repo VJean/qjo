@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 
+import logging
 import config
 from qjo import filter_events, display_events
 from qjo.venues import venues
 from multiprocessing import Pool
 
+logging.basicConfig(format='[%(asctime)s][%(name)s][%(process)d][%(levelname)s] %(message)s', level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def get_followed_artists():
     # TODO: add ability to either:
@@ -27,7 +30,7 @@ def get_followed_artists():
     results = sp.current_user_followed_artists()
     artists = []
 
-    print(f"Retrieving {results['artists']['total']} followed artists")
+    logger.info(f"Retrieving {results['artists']['total']} followed artists")
 
     while results["artists"]["next"]:
         artists.extend([a["name"] for a in results["artists"]["items"]])
@@ -38,14 +41,14 @@ def get_followed_artists():
 
 
 with Pool() as pool:
-    print("Gathering concerts...")
+    logger.info("Gathering concerts...")
     async_results = [pool.apply_async(venue.get_events, ()) for venue in venues]
     events = []
     for result in async_results:
         events.extend(result.get())
-    print("Found %d events" % len(events))
-    print("Sorting by date...")
+    logger.info(f"Found {len(events)} events")
+    logger.info("Sorting by date...")
     events.sort()
-    print("Filtering with followed artists...")
+    logger.info("Filtering with followed artists...")
     events = filter_events(events, get_followed_artists())
     display_events(events)

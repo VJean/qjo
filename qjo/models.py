@@ -3,9 +3,11 @@
 from datetime import date, datetime
 from typing import Sequence, List
 from bs4 import BeautifulSoup
-import urllib3, bs4
+import bs4
+import logging
 from urllib3 import PoolManager
 
+logger = logging.getLogger(__name__)
 
 class Address:
     def __init__(self, full, city, country):
@@ -73,7 +75,7 @@ class Venue:
     def get_events(cls):
         soup = cls._get_agenda_html()
         concerts = cls._soup_to_concerts(soup)
-        print(cls.get_name(), len(concerts), "events from", concerts[0].date, "to", concerts[-1].date)
+        logger.info(f"{cls.get_name()}: {len(concerts)} events from {concerts[0].date} to {concerts[-1].date}")
         return concerts
 
     @classmethod

@@ -1,5 +1,4 @@
 import os, sys
-from datetime import date
 from qjo.venues import venues
 
 folder_path = "./tests/agendas/"

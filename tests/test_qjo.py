@@ -1,3 +1,4 @@
+import logging
 import unittest
 from unittest.mock import Mock
 from datetime import date, datetime
@@ -8,6 +9,8 @@ from qjo.models import Concert, Venue
 from qjo.venues import Maroquinerie, Trianon, CabaretSauvage, parse_date
 from qjo import filter_events
 
+logging.basicConfig(format='[%(asctime)s][%(name)s][%(process)d][%(levelname)s] %(message)s', level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def load_local_html(v: Venue) -> BeautifulSoup:
     venue_name = v.__name__.lower()
