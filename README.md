@@ -3,11 +3,8 @@
 ## Run it yourself
 
 ```
-# set up a virtual env
-python3 -m venv ./venv
-source ./venv/bin/activate
-# install deps
-python -m pip install -r requirements.txt
+# install with poetry
+poetry install
 # run tests
 make test
 # run main script

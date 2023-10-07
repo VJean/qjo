@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "qjo"
+version = "0.1.0"
+description = ""
+authors = ["VJean"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beautifulsoup4 = "^4.12.2"
+urllib3 = "^2.0.6"
+dateparser = "^1.1.8"
+spotipy = "^2.23.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

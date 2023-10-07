@@ -1,4 +1,0 @@
-beautifulsoup4
-urllib3
-dateparser
-spotipy
