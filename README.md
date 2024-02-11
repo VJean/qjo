@@ -28,7 +28,7 @@ Run the tests with `make test`.
 
 For convenience, a script is available to download the html page that's going to be parsed.
 The tests suite mocks the classes so that they load the agenda from disk instead of making a http request.
-To update the local files (for example if a website changed their layout), run `python3 -m tests.save`.
+To update the local files (for example if a website changed their layout), run `poetry run python3 -m tests.save`.
 Be aware that by doing so you should also update the expectations in test cases.
 
 ## Naming
