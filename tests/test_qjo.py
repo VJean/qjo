@@ -49,7 +49,7 @@ class TestVenues(unittest.TestCase):
     def test_cabaret_sauvage(self):
         events = CabaretSauvage.get_events()
         CabaretSauvage._get_agenda_html.assert_called()
-        self.assertEqual(len(events), 23)
+        self.assertEqual(len(events), 29)
 
     def tearDown(self) -> None:
         pass
