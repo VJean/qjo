@@ -9,8 +9,8 @@ logger = logging.getLogger(__name__)
 
 class Maroquinerie(models.Venue):
     name = "La Maroquinerie"
-    url = "http://www.lamaroquinerie.fr"
-    agenda_url = "http://www.lamaroquinerie.fr/fr/agenda"
+    url = "https://www.lamaroquinerie.fr"
+    agenda_url = "https://www.lamaroquinerie.fr/fr/agenda"
     address = models.Address("Rue Boyer, 75020 Paris", "Paris", "France")
 
     @classmethod
