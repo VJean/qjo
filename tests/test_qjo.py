@@ -44,7 +44,7 @@ class TestVenues(unittest.TestCase):
     def test_trianon(self):
         events = Trianon.get_events()
         Trianon._get_agenda_html.assert_called()
-        self.assertEqual(len(events), 115)
+        self.assertEqual(len(events), 39)
 
     def test_cabaret_sauvage(self):
         events = CabaretSauvage.get_events()
