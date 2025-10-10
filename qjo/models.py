@@ -75,7 +75,10 @@ class Venue:
     def get_events(cls):
         soup = cls._get_agenda_html()
         concerts = cls._soup_to_concerts(soup)
-        logger.info(f"{cls.get_name()}: {len(concerts)} events from {concerts[0].date} to {concerts[-1].date}")
+        if len(concerts):
+            logger.info(f"{cls.get_name()}: {len(concerts)} events from {concerts[0].date} to {concerts[-1].date}")
+        else:
+            logger.warning(f"{cls.get_name()}: No concerts found")
         return concerts
 
     @classmethod
